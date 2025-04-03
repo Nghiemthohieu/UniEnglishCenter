@@ -28,9 +28,9 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   const menuItems = [
     { icon: "home", label: "Trang chủ", path: "/" },
     { icon: "payment", label: "Lương", path: "/salary" },
-    { icon: "group", label: "Nhân sự", path: "/human-resources" },
-    { icon: "calendar_month", label: "Lịch làm", path: "/work-schedule" },
-    { icon: "calendar_month", label: "Lịch trực", path: "/duty-schedule" },
+    { icon: "group", label: "Nhân sự", path: "/human_resources" },
+    { icon: "calendar_month", label: "Lịch làm", path: "/work_schedule" },
+    { icon: "calendar_month", label: "Lịch trực", path: "/duty_schedule" },
     { icon: "fact_check", label: "Phỏng vấn", path: "/interview" },
     { icon: "receipt_long", label: "Hóa đơn", path: "/invoices" },
     { icon: "list_alt", label: "Báo cáo KQ", path: "/reports" },
@@ -52,7 +52,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
             <div className="fixed flex flex-col w-1/2 md:w-1/6 h-full z-10 bg-white md:bg-[#f6f6f9] shadow-lg md:shadow-none">
               {/* Logo & Close Button */}
               <div className="flex justify-between md:justify-center w-full pt-4 px-4">
-                <div className="w-1/2 relative max-h-[3.4rem] max-w-[6rem]">
+                <div className="w-1/2 max-h-[3.4rem] max-w-[6rem]">
                   <img
                     alt="logo"
                     loading="lazy"
@@ -70,7 +70,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               </div>
         
               {/* Menu Items */}
-              <div className="pt-[20px] md:m-5 h-full md:bg-white md:shadow-[0_2rem_3rem_rgba(132,139,200,0.18)] md:rounded-[15px] relative hover:md:shadow-none">
+              <div className="pt-[20px] md:m-5 h-full md:bg-white md:shadow-[0_2rem_3rem_rgba(132,139,200,0.18)] md:rounded-[15px] hover:md:shadow-none">
                 <ul>
                 {menuItems.map((item, index) => (
                     <li key={index}>
@@ -116,7 +116,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           <div className="md:col-span-3 w-full">
             <div className="md:fixed md:w-1/4 w-full  flex flex-col md:pl-[10px] pl-[30px] pr-[30px] overflow-y-auto mt-[50px] md:mt-0 mb-[40px]">
               <div className="pt-[1.4rem]">
-                  <div className="flex md:justify-end gap-[2rem] fixed md:relative top-0 w-full justify-between left-0 right-0 h-[4.6rem] bg-white md:bg-[#f6f6f9] pl-[1.2rem] pr-[1.2rem] md:p-0">
+                  <div className=" flex md:justify-end gap-[2rem] fixed md:relative top-0 w-full justify-between left-0 right-0 h-[4.6rem] bg-white md:bg-[#f6f6f9] pl-[1.2rem] pr-[1.2rem] md:p-0">
                       <button className="md:hidden" onClick={toggleMenu}>
                           <span className="material-symbols-outlined p-[8px] hover:bg-auto cursor-pointer hover:bg-[#eae8e878]">
                               menu
@@ -136,7 +136,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
                   </div>
                   <div className="flex justify-center text-center mt-[1rem] bg-white p-[1.8rem] rounded-[2rem] shadow-[0_2rem_3rem_rgba(132,139,200,0.18)] cursor-pointer transition-[3s] w-full h-full max-h-[200px] hover:shadow-none">
                       <div className="flex flex-col justify-center items-center gap-2">
-                          <Image src="/img/logo.png" alt="" height={88} width={154} className="w-full h-full max-w-[154px] max-h-[88px] rounded-[50%]"/>
+                          <Image src="/img/logo2.png" alt="" height={88} width={154} className="w-full h-full max-w-[154px] max-h-[88px] rounded-[50%] shadow-[0_2rem_3rem_rgba(132,139,200,0.18)]"/>
                           <div>
                               <h2 className="font-semibold text-[1.4rem] text-[var(--color-dark)]">UNI ENGLISH CENTER</h2>
                               <p>TỰ TIN TIẾNG ANH, SÁNH TẦM QUỐC TẾ</p>

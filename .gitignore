@@ -9,6 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+uni_server/config/local.yaml
 
 # testing
 /coverage

@@ -1,0 +1,459 @@
+{"level":"INFO","time":"2025-03-25T16:35:54.857+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-25T16:35:54.975+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-25T17:20:54.839+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-25T17:20:54.858+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-25T17:31:03.238+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-25T17:31:03.246+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-25T17:35:36.839+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-25T17:35:36.848+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-25T17:39:12.802+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-25T17:39:12.810+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-25T17:49:14.958+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-25T17:49:14.968+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T00:09:54.987+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T00:09:55.011+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T00:09:56.556+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T00:31:50.739+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T00:31:50.748+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T00:31:52.098+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T00:32:14.108+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T00:32:14.117+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T00:32:15.893+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T10:48:11.624+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T10:48:11.645+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T10:48:13.523+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T10:51:27.663+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T10:51:27.673+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T10:51:31.709+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T10:53:46.830+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T10:53:46.838+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T10:53:48.369+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:06:40.778+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:06:40.786+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:06:42.476+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:15:30.881+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:15:30.891+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:15:32.831+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:17:52.400+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:17:52.410+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:17:54.298+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:18:51.004+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:18:51.014+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:18:52.798+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:25:08.666+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:25:08.674+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:25:10.484+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:26:44.642+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:26:44.651+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:26:48.121+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:28:39.679+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:28:39.691+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:28:42.066+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:31:23.478+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:31:23.492+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:31:25.558+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:32:33.997+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:32:34.008+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:32:36.031+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:33:22.745+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:33:22.761+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:33:24.524+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:33:49.572+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:33:49.581+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:33:51.131+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:37:08.010+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:37:08.018+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:37:09.834+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:42:43.896+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:42:43.905+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:42:45.417+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:44:38.925+0700","caller":"initialize/run.go:16","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:44:38.933+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T11:44:40.313+0700","caller":"initialize/aws3s.go:20","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T11:48:00.249+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T11:48:00.258+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"ERROR","time":"2025-03-27T11:48:01.698+0700","caller":"initialize/run.go:21","msg":"Server không thể khởi động do lỗi AWS","error":"AWS AccessKeyID hoặc SecretAccessKey không hợp lệ","stacktrace":"uni_server/internal/initialize.Run.func1\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:21\nruntime.gopanic\n\tC:/Program Files (x86)/Go/src/runtime/panic.go:785\nuni_server/internal/initialize.InitAws\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/aws3s.go:25\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:25\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-27T13:39:19.168+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-03-27T13:39:19.173+0700","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"uni_server/internal/initialize.CheckErrerPanic\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:16\nuni_server/internal/initialize.InitMySQL\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:27\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:16\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-27T13:40:06.158+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T13:40:06.180+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"ERROR","time":"2025-03-27T13:40:07.782+0700","caller":"initialize/run.go:21","msg":"Server không thể khởi động do lỗi AWS","error":"AWS AccessKeyID hoặc SecretAccessKey không hợp lệ","stacktrace":"uni_server/internal/initialize.Run.func1\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:21\nruntime.gopanic\n\tC:/Program Files (x86)/Go/src/runtime/panic.go:785\nuni_server/internal/initialize.InitAws\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/aws3s.go:25\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:25\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-27T13:59:40.308+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T13:59:40.318+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"ERROR","time":"2025-03-27T13:59:41.634+0700","caller":"initialize/run.go:21","msg":"Server không thể khởi động do lỗi AWS","error":"AWS AccessKeyID hoặc SecretAccessKey không hợp lệ","stacktrace":"uni_server/internal/initialize.Run.func1\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:21\nruntime.gopanic\n\tC:/Program Files (x86)/Go/src/runtime/panic.go:785\nuni_server/internal/initialize.InitAws\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/aws3s.go:25\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:25\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-27T14:04:55.652+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T14:04:55.660+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"ERROR","time":"2025-03-27T14:04:57.007+0700","caller":"initialize/run.go:21","msg":"Server không thể khởi động do lỗi AWS","error":"AWS AccessKeyID hoặc SecretAccessKey không hợp lệ","stacktrace":"uni_server/internal/initialize.Run.func1\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:21\nruntime.gopanic\n\tC:/Program Files (x86)/Go/src/runtime/panic.go:785\nuni_server/internal/initialize.InitAws\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/aws3s.go:25\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:25\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-27T14:08:18.686+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T14:08:18.695+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"ERROR","time":"2025-03-27T14:08:20.068+0700","caller":"initialize/run.go:21","msg":"Server không thể khởi động do lỗi AWS","error":"AWS AccessKeyID hoặc SecretAccessKey không hợp lệ","stacktrace":"uni_server/internal/initialize.Run.func1\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:21\nruntime.gopanic\n\tC:/Program Files (x86)/Go/src/runtime/panic.go:785\nuni_server/internal/initialize.InitAws\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/aws3s.go:26\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:25\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-27T14:21:35.924+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T14:21:35.933+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T14:21:37.197+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T14:21:37.198+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T14:25:16.177+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T14:25:16.188+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T14:25:22.197+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T14:25:22.198+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T14:26:01.440+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T14:26:01.448+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T14:26:03.144+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T14:26:03.144+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T14:48:51.394+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T14:48:51.405+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T14:48:53.660+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T14:48:53.660+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T14:49:44.134+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T14:49:44.144+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T14:49:46.024+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T14:49:46.024+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T14:51:21.260+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T14:51:21.268+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T14:51:23.043+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T14:51:23.044+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T15:15:13.815+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T15:15:13.824+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T15:15:15.157+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T15:15:15.158+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T21:32:42.402+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-03-27T21:32:42.408+0700","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"uni_server/internal/initialize.CheckErrerPanic\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:16\nuni_server/internal/initialize.InitMySQL\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:27\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:16\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-27T21:34:29.256+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T21:34:29.281+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T21:34:31.415+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T21:34:31.415+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T21:43:37.547+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T21:43:37.558+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T21:43:39.189+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T21:43:39.191+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T21:57:51.282+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T21:57:51.292+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T21:57:52.841+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T21:57:52.841+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T22:00:56.860+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T22:00:56.869+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T22:00:58.545+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T22:00:58.546+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-27T22:04:19.338+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-27T22:04:19.346+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-27T22:04:20.782+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-27T22:04:20.782+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T08:50:49.724+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T08:50:49.843+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T08:50:51.753+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T08:50:51.754+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T08:52:54.674+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T08:52:54.688+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T08:52:56.380+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T08:52:56.381+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"ERROR","time":"2025-03-28T08:52:56.382+0700","caller":"initialize/run.go:21","msg":"Server không thể khởi động do lỗi AWS","error":"handlers are already registered for path '/api/human_resources'","stacktrace":"uni_server/internal/initialize.Run.func1\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:21\nruntime.gopanic\n\tC:/Program Files (x86)/Go/src/runtime/panic.go:785\ngithub.com/gin-gonic/gin.(*node).addRoute\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/tree.go:260\ngithub.com/gin-gonic/gin.(*Engine).addRoute\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:349\ngithub.com/gin-gonic/gin.(*RouterGroup).handle\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:89\ngithub.com/gin-gonic/gin.(*RouterGroup).GET\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:117\nuni_server/internal/routers.NewRouter\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/routers/router.go:41\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:27\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-28T08:56:39.415+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T08:56:39.425+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T08:56:41.114+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T08:56:41.115+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T09:11:37.165+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T09:11:37.175+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T09:11:38.532+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T09:11:38.533+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T13:57:51.184+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-03-28T13:57:51.187+0700","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"uni_server/internal/initialize.CheckErrerPanic\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:16\nuni_server/internal/initialize.InitMySQL\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:27\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:16\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-28T13:59:06.912+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T13:59:06.933+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T13:59:08.675+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T13:59:08.676+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T14:05:24.729+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T14:05:24.737+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T14:05:26.185+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T14:05:26.186+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T14:06:26.644+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T14:06:26.652+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T14:06:28.115+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T14:06:28.116+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T14:09:52.636+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T14:09:52.645+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T14:09:54.072+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T14:09:54.072+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T14:27:30.786+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T14:27:30.793+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T14:27:32.077+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T14:27:32.078+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T16:00:42.844+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T16:00:43.044+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T16:00:47.105+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T16:00:47.105+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T16:03:06.372+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T16:03:06.387+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T16:03:08.238+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T16:03:08.238+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T16:06:03.259+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T16:06:03.276+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T16:06:05.840+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T16:06:05.840+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-28T16:12:11.153+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-28T16:12:11.162+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-28T16:12:12.538+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-28T16:12:12.539+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T00:36:50.444+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T00:36:50.505+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T00:36:52.756+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T00:36:52.756+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T00:37:32.134+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T00:37:32.151+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T00:37:34.138+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T00:37:34.138+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T12:48:50.715+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T12:48:50.819+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T12:48:52.592+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T12:48:52.593+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T17:02:06.185+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-03-29T17:02:06.188+0700","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"uni_server/internal/initialize.CheckErrerPanic\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:16\nuni_server/internal/initialize.InitMySQL\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:27\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:16\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-29T17:02:59.092+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T17:02:59.112+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T17:03:00.450+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T17:03:00.451+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T17:13:16.056+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T17:13:16.175+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T17:13:18.501+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T17:13:18.502+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T17:17:47.638+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T17:17:47.646+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T17:17:49.119+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T17:17:49.119+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T18:48:30.407+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T18:48:30.444+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T18:48:33.027+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T18:48:33.028+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T18:50:10.157+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T18:50:10.165+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T18:50:12.014+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T18:50:12.014+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T19:36:33.286+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T19:36:33.296+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T19:36:34.847+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T19:36:34.847+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T19:39:43.969+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T19:39:43.976+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T19:39:45.422+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T19:39:45.423+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-29T20:24:01.446+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-29T20:24:01.466+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-29T20:24:03.264+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-29T20:24:03.265+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T00:29:19.000+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T00:29:19.145+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T00:29:21.015+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T00:29:21.017+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T00:37:54.302+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T00:37:54.311+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T00:37:55.738+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T00:37:55.738+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T00:55:38.997+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T00:55:39.007+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T00:55:40.725+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T00:55:40.725+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T00:57:45.435+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T00:57:45.444+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T00:57:47.416+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T00:57:47.417+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T01:00:29.255+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T01:00:29.266+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T01:00:30.788+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T01:00:30.788+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T01:04:31.189+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T01:04:31.197+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T01:04:33.001+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T01:04:33.001+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T01:10:33.993+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T01:10:34.004+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T01:10:35.680+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T01:10:35.680+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T01:12:39.549+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T01:12:39.557+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T01:12:42.007+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T01:12:42.007+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T01:14:10.143+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T01:14:10.151+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T01:14:11.802+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T01:14:11.803+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T01:19:57.082+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T01:19:57.090+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T01:19:58.326+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T01:19:58.327+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T01:32:24.349+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T01:32:24.357+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T01:32:25.762+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T01:32:25.763+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T10:15:44.659+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-03-30T10:15:44.663+0700","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"uni_server/internal/initialize.CheckErrerPanic\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:16\nuni_server/internal/initialize.InitMySQL\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:27\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:16\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-30T10:15:56.544+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T10:15:56.563+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T10:15:58.274+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T10:15:58.274+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T10:20:32.281+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T10:20:32.289+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T10:20:34.080+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T10:20:34.081+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T10:21:07.314+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T10:21:07.324+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T10:21:10.517+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T10:21:10.518+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T10:23:56.193+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T10:23:56.202+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T10:23:57.883+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T10:23:57.884+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T10:27:39.204+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T10:27:39.222+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T10:27:41.240+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T10:27:41.241+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T13:27:32.294+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T13:27:32.352+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T13:27:34.483+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T13:27:34.483+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T13:38:21.023+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T13:38:21.033+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T13:38:23.082+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T13:38:23.082+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T13:53:23.002+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T13:53:23.065+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T13:53:25.772+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T13:53:25.772+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T15:26:36.636+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T15:26:36.647+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T15:26:38.594+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T15:26:38.594+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T15:56:44.655+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T15:56:44.665+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T15:56:46.412+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T15:56:46.412+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T16:02:40.777+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T16:02:40.784+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T16:02:42.516+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T16:02:42.517+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T16:06:32.061+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T16:06:32.069+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T16:06:33.610+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T16:06:33.611+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T20:32:04.280+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-03-30T20:32:04.283+0700","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"uni_server/internal/initialize.CheckErrerPanic\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:16\nuni_server/internal/initialize.InitMySQL\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:27\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:16\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-30T20:38:18.300+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-03-30T20:38:18.305+0700","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"uni_server/internal/initialize.CheckErrerPanic\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:16\nuni_server/internal/initialize.InitMySQL\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:27\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:16\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-30T20:40:09.473+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T20:40:09.494+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T20:40:11.293+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T20:40:11.294+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-30T21:12:13.756+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-30T21:12:13.764+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-30T21:12:15.301+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-30T21:12:15.301+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T12:39:32.693+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T12:39:32.702+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T12:39:34.098+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T12:39:34.098+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T12:43:49.574+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T12:43:49.584+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T12:43:51.366+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T12:43:51.367+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T12:46:18.138+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T12:46:18.146+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T12:46:19.644+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T12:46:19.644+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T12:49:38.407+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T12:49:38.415+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T12:49:40.252+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T12:49:40.253+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T12:53:31.260+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T12:53:31.268+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T12:53:32.545+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T12:53:32.545+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T12:57:51.438+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T12:57:51.445+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T12:57:53.719+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T12:57:53.719+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T12:59:57.199+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T12:59:57.209+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T12:59:59.129+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T12:59:59.129+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T13:05:17.316+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T13:05:17.325+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T13:05:18.737+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T13:05:18.738+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T13:07:10.735+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T13:07:10.745+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T13:07:13.708+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T13:07:13.710+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T14:27:22.869+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T14:27:22.907+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T14:27:25.136+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T14:27:25.137+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T14:52:53.332+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T14:52:53.341+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T14:52:55.112+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T14:52:55.112+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T15:13:48.029+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T15:13:48.040+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T15:13:49.429+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T15:13:49.429+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"ERROR","time":"2025-03-31T15:13:49.452+0700","caller":"initialize/run.go:21","msg":"Server không thể khởi động do lỗi AWS","error":"':id' in new path '/api/ds/:id/:year/:month' conflicts with existing wildcard ':year' in existing prefix '/api/ds/:year'","stacktrace":"uni_server/internal/initialize.Run.func1\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:21\nruntime.gopanic\n\tC:/Program Files (x86)/Go/src/runtime/panic.go:785\ngithub.com/gin-gonic/gin.(*node).addRoute\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/tree.go:247\ngithub.com/gin-gonic/gin.(*Engine).addRoute\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:349\ngithub.com/gin-gonic/gin.(*RouterGroup).handle\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:89\ngithub.com/gin-gonic/gin.(*RouterGroup).GET\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:117\nuni_server/internal/routers.NewRouter\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/routers/router.go:168\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:27\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-31T15:14:45.446+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T15:14:45.454+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T15:14:47.083+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T15:14:47.084+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"ERROR","time":"2025-03-31T15:14:47.100+0700","caller":"initialize/run.go:21","msg":"Server không thể khởi động do lỗi AWS","error":"':id' in new path '/api/ds/:id/:year/:month' conflicts with existing wildcard ':year' in existing prefix '/api/ds/:year'","stacktrace":"uni_server/internal/initialize.Run.func1\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:21\nruntime.gopanic\n\tC:/Program Files (x86)/Go/src/runtime/panic.go:785\ngithub.com/gin-gonic/gin.(*node).addRoute\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/tree.go:247\ngithub.com/gin-gonic/gin.(*Engine).addRoute\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:349\ngithub.com/gin-gonic/gin.(*RouterGroup).handle\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:89\ngithub.com/gin-gonic/gin.(*RouterGroup).GET\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:117\nuni_server/internal/routers.NewRouter\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/routers/router.go:168\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:27\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-31T15:16:51.001+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T15:16:51.011+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T15:16:52.475+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T15:16:52.476+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"ERROR","time":"2025-03-31T15:16:52.490+0700","caller":"initialize/run.go:21","msg":"Server không thể khởi động do lỗi AWS","error":"':year' in new path '/api/ds/:year/:month' conflicts with existing wildcard ':id' in existing prefix '/api/ds/:id'","stacktrace":"uni_server/internal/initialize.Run.func1\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:21\nruntime.gopanic\n\tC:/Program Files (x86)/Go/src/runtime/panic.go:785\ngithub.com/gin-gonic/gin.(*node).addRoute\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/tree.go:247\ngithub.com/gin-gonic/gin.(*Engine).addRoute\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:349\ngithub.com/gin-gonic/gin.(*RouterGroup).handle\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:89\ngithub.com/gin-gonic/gin.(*RouterGroup).GET\n\tC:/Users/thohi/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:117\nuni_server/internal/routers.NewRouter\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/routers/router.go:168\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:27\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-03-31T15:17:41.421+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T15:17:41.431+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T15:17:43.034+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T15:17:43.035+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-03-31T15:23:59.066+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-03-31T15:23:59.074+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-03-31T15:24:00.839+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-03-31T15:24:00.840+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T01:11:29.732+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T01:11:29.879+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T01:11:33.265+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T01:11:33.266+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T10:22:29.965+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-04-01T10:22:29.969+0700","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"uni_server/internal/initialize.CheckErrerPanic\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:16\nuni_server/internal/initialize.InitMySQL\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:27\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:16\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-01T10:31:08.479+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T10:31:08.497+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T10:31:10.235+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T10:31:10.236+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T10:33:46.044+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T10:33:46.054+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T10:33:47.605+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T10:33:47.606+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T10:37:20.498+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T10:37:20.506+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T10:37:22.055+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T10:37:22.056+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T10:47:37.794+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T10:47:37.803+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T10:47:39.331+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T10:47:39.332+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T10:50:21.648+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T10:50:21.657+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T10:50:23.548+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T10:50:23.549+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T10:52:11.474+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T10:52:11.483+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T10:52:12.938+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T10:52:12.938+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T10:57:48.688+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T10:57:48.742+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T10:57:51.469+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T10:57:51.470+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T10:59:41.626+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T10:59:41.636+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T10:59:43.094+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T10:59:43.094+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-01T11:01:34.033+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-01T11:01:34.041+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-01T11:01:35.476+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-01T11:01:35.476+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-03T08:44:07.551+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-03T08:44:07.576+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-03T08:44:09.279+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-03T08:44:09.279+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
