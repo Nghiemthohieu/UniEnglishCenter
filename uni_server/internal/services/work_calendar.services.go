@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type WorkCalendarService struct {
@@ -24,8 +23,8 @@ func (wcs *WorkCalendarService) UpdateWorkCalendar(request models.WorkCalendar) 
 	return wcs.WorkCalendarRepo.UpdateWorkCalendar(request)
 }
 
-func (wcs *WorkCalendarService) GetAllWorkCalendars(paging util.Paging) ([]models.WorkCalendar, int64, error) {
-	return wcs.WorkCalendarRepo.GetAllWorkCalendars(paging)
+func (wcs *WorkCalendarService) GetAllWorkCalendars() ([]models.WorkCalendar, error) {
+	return wcs.WorkCalendarRepo.GetAllWorkCalendars()
 }
 
 func (wcs *WorkCalendarService) GetWorkCalendarByID(id uint) (*models.WorkCalendar, error) {

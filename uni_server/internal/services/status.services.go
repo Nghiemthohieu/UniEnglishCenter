@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type StatusService struct {
@@ -24,8 +23,8 @@ func (ss *StatusService) UpdateStatus(request models.Status) error {
 	return ss.StatusRepo.UpdateStatus(request)
 }
 
-func (ss *StatusService) GetAllStatuses(paging util.Paging) ([]models.Status, int64, error) {
-	return ss.StatusRepo.GetAllStatuses(paging)
+func (ss *StatusService) GetAllStatuses() ([]models.Status, error) {
+	return ss.StatusRepo.GetAllStatuses()
 }
 
 func (ss *StatusService) GetStatusByID(id uint) (*models.Status, error) {

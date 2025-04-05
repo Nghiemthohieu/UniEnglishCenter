@@ -6,7 +6,6 @@ import (
 	"log"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 
 	"gorm.io/gorm"
 )
@@ -91,20 +90,13 @@ func (br *BillRepo) CreateBillRepo(bill models.Bill, student models.Student, img
 	return nil
 }
 
-func (br *BillRepo) GetAllBillRepo(paging util.Paging) ([]models.Bill, int64, error) {
+func (br *BillRepo) GetAllBillRepo() ([]models.Bill, error) {
 	var bill []models.Bill
-	var total int64
-
-	if err := global.Mdb.Model(&models.Bill{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số bill: %v", err)
+	if err := global.Mdb.Preload("Human").Preload("Office").Preload("CustomerSource").Preload("PaymentForm").Preload("Courses").Find(&bill).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách bill: %v", err)
 	}
 
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Preload("Human").Preload("Office").Preload("CustomerSource").Preload("PaymentForm").Preload("Courses").Limit(paging.Limit).Offset(offset).Find(&bill).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách bill: %v", err)
-	}
-
-	return bill, total, nil
+	return bill, nil
 }
 
 func (br *BillRepo) GetBillByIdRepo(id uint) (models.Bill, []models.BillImg, error) {

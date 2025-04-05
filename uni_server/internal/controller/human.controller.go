@@ -5,7 +5,6 @@ import (
 	"uni_server/internal/dto"
 	"uni_server/internal/services"
 	"uni_server/pkg/response"
-	util "uni_server/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )
@@ -72,28 +71,14 @@ func (hc *HumanController) GetHumanController() gin.HandlerFunc {
 // Lấy danh sách tất cả Humans
 func (hc *HumanController) GetAllHumansController() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
-		var paging util.Paging
-		if err := ctx.ShouldBindQuery(&paging); err != nil {
-			response.ErrorRespone(ctx, 400, 20010, "Dữ liệu phân trang không hợp lệ", err)
-			return
-		}
-
-		// Xử lý paging (nếu giá trị sai thì set mặc định)
-		paging.Process()
-
-		humans, total, err := hc.HumanService.GetAllHumansService(paging)
+		humans, err := hc.HumanService.GetAllHumansService()
 		if err != nil {
 			response.ErrorRespone(ctx, 500, 20011, "Lỗi khi lấy danh sách Humans", err)
 			return
 		}
 
 		// Trả về kết quả có thông tin phân trang
-		response.SuccessResponse(ctx, 20001, gin.H{
-			"data":  humans,
-			"page":  paging.Page,
-			"limit": paging.Limit,
-			"total": total,
-		})
+		response.SuccessResponse(ctx, 20001, humans)
 	}
 }
 

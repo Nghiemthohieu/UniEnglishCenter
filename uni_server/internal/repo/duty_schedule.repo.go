@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type DutyScheduleRepo struct{}
@@ -43,18 +42,12 @@ func (dsr *DutyScheduleRepo) UpdateDutySchedule(schedule models.DutySchedule) er
 	return nil
 }
 
-func (dsr *DutyScheduleRepo) GetAllDutySchedules(paging util.Paging) ([]models.DutySchedule, int64, error) {
+func (dsr *DutyScheduleRepo) GetAllDutySchedules() ([]models.DutySchedule, error) {
 	var schedules []models.DutySchedule
-	var total int64
-
-	if err := global.Mdb.Model(&models.DutySchedule{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số lịch trực: %v", err)
+	if err := global.Mdb.Preload("Human").Find(&schedules).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách lịch trực: %v", err)
 	}
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Preload("Human").Limit(paging.Limit).Offset(offset).Find(&schedules).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách lịch trực: %v", err)
-	}
-	return schedules, total, nil
+	return schedules, nil
 }
 
 func (dsr *DutyScheduleRepo) GetDutyScheduleByID(id uint) (*models.DutySchedule, error) {

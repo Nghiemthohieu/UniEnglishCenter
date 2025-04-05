@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type PotentialCustomerService struct {
@@ -24,8 +23,8 @@ func (pcs *PotentialCustomerService) UpdatePotentialCustomer(request models.Pote
 	return pcs.PotentialCustomerRepo.UpdatePotentialCustomer(request)
 }
 
-func (pcs *PotentialCustomerService) GetAllPotentialCustomers(paging util.Paging) ([]models.PotentialCustomerList, int64, error) {
-	return pcs.PotentialCustomerRepo.GetAllPotentialCustomers(paging)
+func (pcs *PotentialCustomerService) GetAllPotentialCustomers() ([]models.PotentialCustomerList, error) {
+	return pcs.PotentialCustomerRepo.GetAllPotentialCustomers()
 }
 
 func (pcs *PotentialCustomerService) GetPotentialCustomerByID(id uint) (*models.PotentialCustomerList, error) {
@@ -39,4 +38,3 @@ func (pcs *PotentialCustomerService) DeletePotentialCustomer(id uint) error {
 func (pcs *PotentialCustomerService) GetPotentialCustomerByHumanID(humanID int) ([]models.PotentialCustomerList, error) {
 	return pcs.PotentialCustomerRepo.GetPotentialCustomerByHumanID(humanID)
 }
-

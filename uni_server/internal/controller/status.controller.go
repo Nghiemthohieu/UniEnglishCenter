@@ -5,7 +5,6 @@ import (
 	"uni_server/internal/models"
 	"uni_server/internal/services"
 	"uni_server/pkg/response"
-	util "uni_server/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )
@@ -86,22 +85,11 @@ func (sc *StatusController) DeleteStatus() gin.HandlerFunc {
 
 func (sc *StatusController) GetAllStatuses() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
-		var paging util.Paging
-		if err := ctx.ShouldBindQuery(&paging); err != nil {
-			response.ErrorRespone(ctx, 400, 20010, "Dữ liệu phân trang không hợp lệ", err)
-			return
-		}
-		paging.Process()
-		statuses, total, err := sc.StatusService.GetAllStatuses(paging)
+		statuses, err := sc.StatusService.GetAllStatuses()
 		if err != nil {
 			response.ErrorRespone(ctx, 500, 20011, "Lỗi khi lấy danh sách trạng thái", err)
 			return
 		}
-		response.SuccessResponse(ctx, 20001, gin.H{
-			"data":  statuses,
-			"page":  paging.Page,
-			"limit": paging.Limit,
-			"total": total,
-		})
+		response.SuccessResponse(ctx, 20001, statuses)
 	}
 }

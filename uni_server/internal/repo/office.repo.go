@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type OfficeRepo struct{}
@@ -47,20 +46,12 @@ func (repo *OfficeRepo) UpdateOffice(office models.Office) error {
 }
 
 // 📌 Lấy danh sách văn phòng có phân trang
-func (repo *OfficeRepo) GetAllOffices(paging util.Paging) ([]models.Office, int64, error) {
+func (repo *OfficeRepo) GetAllOffices() ([]models.Office, error) {
 	var offices []models.Office
-	var total int64
-
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.Office{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số văn phòng: %v", err)
+	if err := global.Mdb.Find(&offices).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách văn phòng: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Limit(paging.Limit).Offset(offset).Find(&offices).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách văn phòng: %v", err)
-	}
-	return offices, total, nil
+	return offices, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một văn phòng theo ID

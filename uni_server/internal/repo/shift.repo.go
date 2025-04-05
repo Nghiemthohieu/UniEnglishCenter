@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type ShiftRepo struct{}
@@ -47,20 +46,13 @@ func (repo *ShiftRepo) UpdateShift(shift models.Shift) error {
 }
 
 // 📌 Lấy danh sách ca làm việc có phân trang
-func (repo *ShiftRepo) GetAllShifts(paging util.Paging) ([]models.Shift, int64, error) {
+func (repo *ShiftRepo) GetAllShifts() ([]models.Shift, error) {
 	var shifts []models.Shift
-	var total int64
 
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.Shift{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số ca làm việc: %v", err)
+	if err := global.Mdb.Find(&shifts).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách ca làm việc: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Limit(paging.Limit).Offset(offset).Find(&shifts).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách ca làm việc: %v", err)
-	}
-	return shifts, total, nil
+	return shifts, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một ca làm việc theo ID

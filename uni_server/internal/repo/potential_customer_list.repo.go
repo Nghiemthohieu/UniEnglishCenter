@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type PotentialCustomerListRepo struct{}
@@ -47,20 +46,12 @@ func (repo *PotentialCustomerListRepo) UpdatePotentialCustomer(potentialCustomer
 }
 
 // 📌 Lấy danh sách khách hàng tiềm năng có phân trang
-func (repo *PotentialCustomerListRepo) GetAllPotentialCustomers(paging util.Paging) ([]models.PotentialCustomerList, int64, error) {
+func (repo *PotentialCustomerListRepo) GetAllPotentialCustomers() ([]models.PotentialCustomerList, error) {
 	var customers []models.PotentialCustomerList
-	var total int64
-
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.PotentialCustomerList{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số khách hàng tiềm năng: %v", err)
+	if err := global.Mdb.Preload("Human").Find(&customers).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách khách hàng tiềm năng: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Preload("Human").Limit(paging.Limit).Offset(offset).Find(&customers).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách khách hàng tiềm năng: %v", err)
-	}
-	return customers, total, nil
+	return customers, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một khách hàng tiềm năng theo ID

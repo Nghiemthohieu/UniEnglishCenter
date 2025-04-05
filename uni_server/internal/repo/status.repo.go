@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type StatusRepo struct{}
@@ -47,20 +46,12 @@ func (repo *StatusRepo) UpdateStatus(status models.Status) error {
 }
 
 // 📌 Lấy danh sách trạng thái có phân trang
-func (repo *StatusRepo) GetAllStatuses(paging util.Paging) ([]models.Status, int64, error) {
+func (repo *StatusRepo) GetAllStatuses() ([]models.Status, error) {
 	var statuses []models.Status
-	var total int64
-
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.Status{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số trạng thái: %v", err)
+	if err := global.Mdb.Find(&statuses).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách trạng thái: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Limit(paging.Limit).Offset(offset).Find(&statuses).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách trạng thái: %v", err)
-	}
-	return statuses, total, nil
+	return statuses, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một trạng thái theo ID

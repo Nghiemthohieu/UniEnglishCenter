@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type InterviewListRepo struct{}
@@ -47,20 +46,12 @@ func (repo *InterviewListRepo) UpdateInterview(interview models.InterviewList) e
 }
 
 // 📌 Lấy danh sách phỏng vấn có phân trang
-func (repo *InterviewListRepo) GetAllInterviews(paging util.Paging) ([]models.InterviewList, int64, error) {
+func (repo *InterviewListRepo) GetAllInterviews() ([]models.InterviewList, error) {
 	var interviews []models.InterviewList
-	var total int64
-
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.InterviewList{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số cuộc phỏng vấn: %v", err)
+	if err := global.Mdb.Preload("Human").Find(&interviews).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách phỏng vấn: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Preload("Human").Limit(paging.Limit).Offset(offset).Find(&interviews).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách phỏng vấn: %v", err)
-	}
-	return interviews, total, nil
+	return interviews, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một cuộc phỏng vấn theo ID

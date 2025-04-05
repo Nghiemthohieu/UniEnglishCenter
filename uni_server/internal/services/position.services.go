@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type PositionService struct {
@@ -24,8 +23,8 @@ func (ps *PositionService) UpdatePosition(request models.Position) error {
 	return ps.PositionRepo.UpdatePosition(request)
 }
 
-func (ps *PositionService) GetAllPositions(paging util.Paging) ([]models.Position, int64, error) {
-	return ps.PositionRepo.GetAllPositions(paging)
+func (ps *PositionService) GetAllPositions() ([]models.Position, error) {
+	return ps.PositionRepo.GetAllPositions()
 }
 
 func (ps *PositionService) GetPositionByID(id uint) (*models.Position, error) {

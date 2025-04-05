@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type CustomerSourceServices struct {
@@ -24,8 +23,8 @@ func (css *CustomerSourceServices) UpdateCustomerSourceService(request models.Cu
 	return css.CustomerSourceRepo.UpdateCustomerSourceRepo(request)
 }
 
-func (css *CustomerSourceServices) GetAllCustomerSourcesService(paging util.Paging) ([]models.CustomerSource, int64, error) {
-	return css.CustomerSourceRepo.GetAllCustomerSourcesRepo(paging)
+func (css *CustomerSourceServices) GetAllCustomerSourcesService() ([]models.CustomerSource, error) {
+	return css.CustomerSourceRepo.GetAllCustomerSourcesRepo()
 }
 
 func (css *CustomerSourceServices) GetCustomerSourceByIdService(id uint) (*models.CustomerSource, error) {

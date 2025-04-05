@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type CourseRepo struct{}
@@ -46,19 +45,12 @@ func (cr *CourseRepo) UpdateCourseRepo(course models.Course) error {
 	return nil
 }
 
-func (cr *CourseRepo) GetAllCoursesRepo(paging util.Paging) ([]models.Course, int64, error) {
+func (cr *CourseRepo) GetAllCoursesRepo() ([]models.Course, error) {
 	var courses []models.Course
-	var total int64
-
-	if err := global.Mdb.Model(&models.Course{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số Course: %v", err)
+	if err := global.Mdb.Find(&courses).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách course: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Limit(paging.Limit).Offset(offset).Find(&courses).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách course: %v", err)
-	}
-	return courses, total, nil
+	return courses, nil
 }
 
 func (cr *CourseRepo) GetCourseByIDRepo(id uint) (*models.Course, error) {

@@ -5,7 +5,6 @@ import (
 	"uni_server/internal/models"
 	"uni_server/internal/services"
 	"uni_server/pkg/response"
-	util "uni_server/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )
@@ -86,22 +85,11 @@ func (sc *ShiftController) DeleteShift() gin.HandlerFunc {
 
 func (sc *ShiftController) GetAllShifts() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
-		var paging util.Paging
-		if err := ctx.ShouldBindQuery(&paging); err != nil {
-			response.ErrorRespone(ctx, 400, 20010, "Dữ liệu phân trang không hợp lệ", err)
-			return
-		}
-		paging.Process()
-		shifts, total, err := sc.ShiftService.GetAllShifts(paging)
+		shifts, err := sc.ShiftService.GetAllShifts()
 		if err != nil {
 			response.ErrorRespone(ctx, 500, 20011, "Lỗi khi lấy danh sách ca làm việc", err)
 			return
 		}
-		response.SuccessResponse(ctx, 20001, gin.H{
-			"data":  shifts,
-			"page":  paging.Page,
-			"limit": paging.Limit,
-			"total": total,
-		})
+		response.SuccessResponse(ctx, 20001, shifts)
 	}
 }

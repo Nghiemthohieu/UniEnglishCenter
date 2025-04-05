@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type PositionRepo struct{}
@@ -47,20 +46,13 @@ func (repo *PositionRepo) UpdatePosition(position models.Position) error {
 }
 
 // 📌 Lấy danh sách vị trí công việc có phân trang
-func (repo *PositionRepo) GetAllPositions(paging util.Paging) ([]models.Position, int64, error) {
+func (repo *PositionRepo) GetAllPositions() ([]models.Position, error) {
 	var positions []models.Position
-	var total int64
 
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.Position{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số vị trí công việc: %v", err)
+	if err := global.Mdb.Find(&positions).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách vị trí công việc: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Limit(paging.Limit).Offset(offset).Find(&positions).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách vị trí công việc: %v", err)
-	}
-	return positions, total, nil
+	return positions, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một vị trí công việc theo ID

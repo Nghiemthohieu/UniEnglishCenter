@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type TimeKeepingService struct {
@@ -24,8 +23,8 @@ func (tks *TimeKeepingService) UpdateTimeKeeping(request models.TimeKeeping) err
 	return tks.TimeKeepingRepo.UpdateTimeKeeping(request)
 }
 
-func (tks *TimeKeepingService) GetAllTimeKeeping(paging util.Paging) ([]models.TimeKeeping, int64, error) {
-	return tks.TimeKeepingRepo.GetAllTimeKeepings(paging)
+func (tks *TimeKeepingService) GetAllTimeKeeping() ([]models.TimeKeeping, error) {
+	return tks.TimeKeepingRepo.GetAllTimeKeepings()
 }
 
 func (tks *TimeKeepingService) GetTimeKeepingByID(id uint) (*models.TimeKeeping, error) {

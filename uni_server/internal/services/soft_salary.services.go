@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type SoftSalaryService struct {
@@ -24,8 +23,8 @@ func (sss *SoftSalaryService) UpdateSoftSalary(request models.SoftSalary) error 
 	return sss.SoftSalaryRepo.UpdateSoftSalary(request)
 }
 
-func (sss *SoftSalaryService) GetAllSoftSalaries(paging util.Paging) ([]models.SoftSalary, int64, error) {
-	return sss.SoftSalaryRepo.GetAllSoftSalaries(paging)
+func (sss *SoftSalaryService) GetAllSoftSalaries() ([]models.SoftSalary, error) {
+	return sss.SoftSalaryRepo.GetAllSoftSalaries()
 }
 
 func (sss *SoftSalaryService) GetSoftSalaryByID(id uint) (*models.SoftSalary, error) {

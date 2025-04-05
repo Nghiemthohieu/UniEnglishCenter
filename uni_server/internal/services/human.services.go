@@ -96,8 +96,8 @@ func (hs *HumanService) GetHumanByIDService(id uint) (models.Human, []models.Hum
 }
 
 // Lấy tất cả Humans
-func (hs *HumanService) GetAllHumansService(paging util.Paging) ([]models.Human, int64, error) {
-	return hs.HumanRepo.GetAllHumansRepo(paging)
+func (hs *HumanService) GetAllHumansService() ([]models.Human, error) {
+	return hs.HumanRepo.GetAllHumansRepo()
 }
 
 // Cập nhật thông tin Human

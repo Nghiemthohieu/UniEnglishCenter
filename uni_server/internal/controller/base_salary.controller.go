@@ -5,7 +5,6 @@ import (
 	"uni_server/internal/models"
 	"uni_server/internal/services"
 	"uni_server/pkg/response"
-	util "uni_server/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )
@@ -62,26 +61,13 @@ func (bsc *BaseSalaryController) UpdateBaseSalaryController() gin.HandlerFunc {
 
 func (bsc *BaseSalaryController) GetAllBaseSalaryController() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
-		var paging util.Paging
-		if err := ctx.ShouldBindQuery(&paging); err != nil {
-			response.ErrorRespone(ctx, 400, 20010, "Dữ liệu phân trang không hợp lệ", err)
-			return
-		}
-
-		paging.Process()
-
-		baseSalary, total, err := bsc.BaseSalaryService.GetALlBaseSalaryService(paging)
+		baseSalary, err := bsc.BaseSalaryService.GetALlBaseSalaryService()
 		if err != nil {
 			response.ErrorRespone(ctx, 500, 20010, "Lỗi khi tạo BaseSalary:", err)
 			return
 		}
 
-		response.SuccessResponse(ctx, 20001, gin.H{
-			"data":  baseSalary,
-			"page":  paging.Page,
-			"limit": paging.Limit,
-			"total": total,
-		})
+		response.SuccessResponse(ctx, 20001, baseSalary)
 	}
 }
 

@@ -89,8 +89,8 @@ func (bs *BillServices) CreateBillService(request dto.BillRequest) error {
 	return nil
 }
 
-func (bs *BillServices) GetAllBillServies(paging util.Paging) ([]models.Bill, int64, error) {
-	return bs.BillRepo.GetAllBillRepo(paging)
+func (bs *BillServices) GetAllBillServies() ([]models.Bill, error) {
+	return bs.BillRepo.GetAllBillRepo()
 }
 
 func (bs *BillServices) GetBillByIDService(id uint) (models.Bill, []models.BillImg, error) {

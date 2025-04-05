@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type TimeKeepingRepo struct{}
@@ -47,20 +46,13 @@ func (repo *TimeKeepingRepo) UpdateTimeKeeping(timeKeeping models.TimeKeeping) e
 }
 
 // 📌 Lấy danh sách chấm công có phân trang
-func (repo *TimeKeepingRepo) GetAllTimeKeepings(paging util.Paging) ([]models.TimeKeeping, int64, error) {
+func (repo *TimeKeepingRepo) GetAllTimeKeepings() ([]models.TimeKeeping, error) {
 	var timeKeepings []models.TimeKeeping
-	var total int64
 
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.TimeKeeping{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số chấm công: %v", err)
+	if err := global.Mdb.Preload("Human").Preload("Position").Find(&timeKeepings).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách chấm công: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Preload("Human").Preload("Position").Limit(paging.Limit).Offset(offset).Find(&timeKeepings).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách chấm công: %v", err)
-	}
-	return timeKeepings, total, nil
+	return timeKeepings, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một bản ghi chấm công theo ID

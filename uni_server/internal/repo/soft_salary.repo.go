@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type SoftSalaryRepo struct{}
@@ -47,20 +46,12 @@ func (repo *SoftSalaryRepo) UpdateSoftSalary(salary models.SoftSalary) error {
 }
 
 // 📌 Lấy danh sách bảng lương mềm có phân trang
-func (repo *SoftSalaryRepo) GetAllSoftSalaries(paging util.Paging) ([]models.SoftSalary, int64, error) {
+func (repo *SoftSalaryRepo) GetAllSoftSalaries() ([]models.SoftSalary, error) {
 	var salaries []models.SoftSalary
-	var total int64
-
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.SoftSalary{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số bảng lương mềm: %v", err)
+	if err := global.Mdb.Preload("Position").Find(&salaries).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách bảng lương mềm: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Preload("Position").Limit(paging.Limit).Offset(offset).Find(&salaries).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách bảng lương mềm: %v", err)
-	}
-	return salaries, total, nil
+	return salaries, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một bảng lương mềm theo ID

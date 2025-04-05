@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type PaymentFormService struct {
@@ -24,8 +23,8 @@ func (pfs *PaymentFormService) UpdatePaymentForm(request models.PaymentForm) err
 	return pfs.PaymentFormRepo.UpdatePaymentForm(request)
 }
 
-func (pfs *PaymentFormService) GetAllPaymentForms(paging util.Paging) ([]models.PaymentForm, int64, error) {
-	return pfs.PaymentFormRepo.GetAllPaymentForms(paging)
+func (pfs *PaymentFormService) GetAllPaymentForms() ([]models.PaymentForm, error) {
+	return pfs.PaymentFormRepo.GetAllPaymentForms()
 }
 
 func (pfs *PaymentFormService) GetPaymentFormByID(id uint) (*models.PaymentForm, error) {

@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type WorkCalendarRepo struct{}
@@ -47,20 +46,13 @@ func (repo *WorkCalendarRepo) UpdateWorkCalendar(workCalendar models.WorkCalenda
 }
 
 // 📌 Lấy danh sách lịch làm việc có phân trang
-func (repo *WorkCalendarRepo) GetAllWorkCalendars(paging util.Paging) ([]models.WorkCalendar, int64, error) {
+func (repo *WorkCalendarRepo) GetAllWorkCalendars() ([]models.WorkCalendar, error) {
 	var workCalendars []models.WorkCalendar
-	var total int64
 
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.WorkCalendar{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số lịch làm việc: %v", err)
+	if err := global.Mdb.Preload("Human").Find(&workCalendars).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách lịch làm việc: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Preload("Human").Limit(paging.Limit).Offset(offset).Find(&workCalendars).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách lịch làm việc: %v", err)
-	}
-	return workCalendars, total, nil
+	return workCalendars, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một lịch làm việc theo ID

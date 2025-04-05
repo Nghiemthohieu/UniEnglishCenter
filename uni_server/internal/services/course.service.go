@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type CourseServices struct {
@@ -24,8 +23,8 @@ func (cs *CourseServices) UpdateCourseService(request models.Course) error {
 	return cs.CourseRepo.UpdateCourseRepo(request)
 }
 
-func (cs *CourseServices) GetAllCoursesService(paging util.Paging) ([]models.Course, int64, error) {
-	return cs.CourseRepo.GetAllCoursesRepo(paging)
+func (cs *CourseServices) GetAllCoursesService() ([]models.Course, error) {
+	return cs.CourseRepo.GetAllCoursesRepo()
 }
 
 func (cs *CourseServices) GetCourseByIdService(id uint) (*models.Course, error) {

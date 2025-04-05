@@ -6,7 +6,6 @@ import (
 	"log"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 
 	"gorm.io/gorm"
 )
@@ -70,22 +69,21 @@ func (hr *HumanRepo) GetHumanByIDRepo(id uint) (models.Human, []models.HumanNIC,
 }
 
 // Lấy tất cả Humans
-func (hr *HumanRepo) GetAllHumansRepo(paging util.Paging) ([]models.Human, int64, error) {
+func (hr *HumanRepo) GetAllHumansRepo() ([]models.Human, error) {
 	var humans []models.Human
 	var total int64
 
 	// Đếm tổng số bản ghi
 	if err := global.Mdb.Model(&models.Human{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số Humans: %v", err)
+		return nil, fmt.Errorf("lỗi khi lấy tổng số Humans: %v", err)
 	}
 
-	// Lấy danh sách có phân trang
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Preload("Position").Preload("Office").Preload("Status").Preload("Team").Limit(paging.Limit).Offset(offset).Find(&humans).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách Humans: %v", err)
+	// Lấy toàn bộ danh sách
+	if err := global.Mdb.Preload("Position").Preload("Office").Preload("Status").Preload("Team").Find(&humans).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách Humans: %v", err)
 	}
 
-	return humans, total, nil
+	return humans, nil
 }
 
 // Cập nhật thông tin Human

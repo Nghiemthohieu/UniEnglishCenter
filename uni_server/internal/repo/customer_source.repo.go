@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type CustomerSourceRepo struct{}
@@ -44,18 +43,12 @@ func (csr *CustomerSourceRepo) UpdateCustomerSourceRepo(source models.CustomerSo
 	return nil
 }
 
-func (csr *CustomerSourceRepo) GetAllCustomerSourcesRepo(paging util.Paging) ([]models.CustomerSource, int64, error) {
+func (csr *CustomerSourceRepo) GetAllCustomerSourcesRepo() ([]models.CustomerSource, error) {
 	var sources []models.CustomerSource
-	var total int64
-
-	if err := global.Mdb.Model(&models.CustomerSource{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số Customer Source: %v", err)
+	if err := global.Mdb.Find(&sources).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách customer source: %v", err)
 	}
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Limit(paging.Limit).Offset(offset).Find(&sources).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách customer source: %v", err)
-	}
-	return sources, total, nil
+	return sources, nil
 }
 
 func (csr *CustomerSourceRepo) GetCustomerSourceByIDRepo(id uint) (*models.CustomerSource, error) {

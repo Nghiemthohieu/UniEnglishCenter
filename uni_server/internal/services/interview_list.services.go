@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type InterviewListService struct {
@@ -24,8 +23,8 @@ func (ils *InterviewListService) UpdateInterviewList(request models.InterviewLis
 	return ils.InterviewListRepo.UpdateInterview(request)
 }
 
-func (ils *InterviewListService) GetAllInterviewLists(paging util.Paging) ([]models.InterviewList, int64, error) {
-	return ils.InterviewListRepo.GetAllInterviews(paging)
+func (ils *InterviewListService) GetAllInterviewLists() ([]models.InterviewList, error) {
+	return ils.InterviewListRepo.GetAllInterviews()
 }
 
 func (ils *InterviewListService) GetInterviewListByID(id uint) (*models.InterviewList, error) {

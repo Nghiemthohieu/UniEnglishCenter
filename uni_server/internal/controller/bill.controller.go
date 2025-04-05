@@ -5,7 +5,6 @@ import (
 	"uni_server/internal/dto"
 	"uni_server/internal/services"
 	"uni_server/pkg/response"
-	util "uni_server/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )
@@ -41,26 +40,14 @@ func (bc *BillController) CreateBillController() gin.HandlerFunc {
 
 func (bc *BillController) GetAllBillController() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
-		var paging util.Paging
-		if err := ctx.ShouldBindQuery(&paging); err != nil {
-			response.ErrorRespone(ctx, 400, 20010, "Dữ liệu phân trang không hợp lệ", err)
-			return
-		}
 
-		paging.Process()
-
-		bills, total, err := bc.BillServices.GetAllBillServies(paging)
+		bills, err := bc.BillServices.GetAllBillServies()
 		if err != nil {
 			response.ErrorRespone(ctx, 500, 20011, "Lỗi khi lấy danh sách hóa đơn", err)
 			return
 		}
 
-		response.SuccessResponse(ctx, 20001, gin.H{
-			"data":  bills,
-			"page":  paging.Page,
-			"limit": paging.Limit,
-			"total": total,
-		})
+		response.SuccessResponse(ctx, 20001, bills)
 	}
 }
 

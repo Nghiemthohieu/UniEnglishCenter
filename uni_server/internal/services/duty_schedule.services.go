@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type DutyScheduleService struct {
@@ -24,8 +23,8 @@ func (dss *DutyScheduleService) UpdateDutySchedule(request models.DutySchedule) 
 	return dss.DutyScheduleRepo.UpdateDutySchedule(request)
 }
 
-func (dss *DutyScheduleService) GetAllDutySchedules(paging util.Paging) ([]models.DutySchedule, int64, error) {
-	return dss.DutyScheduleRepo.GetAllDutySchedules(paging)
+func (dss *DutyScheduleService) GetAllDutySchedules() ([]models.DutySchedule, error) {
+	return dss.DutyScheduleRepo.GetAllDutySchedules()
 }
 
 func (dss *DutyScheduleService) GetDutyScheduleByID(id uint) (*models.DutySchedule, error) {

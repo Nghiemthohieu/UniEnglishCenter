@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type BaseSalaryRepo struct{}
@@ -48,20 +47,12 @@ func (bsr *BaseSalaryRepo) UpdateBaseSalaryRepo(baseSalary models.BaseSalary) er
 	return nil
 }
 
-func (bsr *BaseSalaryRepo) GetAllBaseSalariesRepo(paging util.Paging) ([]models.BaseSalary, int64, error) {
+func (bsr *BaseSalaryRepo) GetAllBaseSalariesRepo() ([]models.BaseSalary, error) {
 	var baseSalaries []models.BaseSalary
-	var total int64
-
-	if err := global.Mdb.Model(&models.BaseSalary{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số BaseSalary: %v", err)
+	if err := global.Mdb.Preload("Position").Find(&baseSalaries).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách base salary: %v", err)
 	}
-
-	// Lấy danh sách có phân trang
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Preload("Position").Limit(paging.Limit).Offset(offset).Find(&baseSalaries).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách base salary: %v", err)
-	}
-	return baseSalaries, total, nil
+	return baseSalaries, nil
 }
 
 func (bsr *BaseSalaryRepo) GetBaseSalaryByIDRepo(id uint) (*models.BaseSalary, error) {

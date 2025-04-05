@@ -5,7 +5,6 @@ import (
 	"uni_server/internal/models"
 	"uni_server/internal/services"
 	"uni_server/pkg/response"
-	util "uni_server/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )
@@ -86,23 +85,13 @@ func (pclc *PotentialCustomerListController) DeletePotentialCustomer() gin.Handl
 
 func (pclc *PotentialCustomerListController) GetAllPotentialCustomers() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
-		var paging util.Paging
-		if err := ctx.ShouldBindQuery(&paging); err != nil {
-			response.ErrorRespone(ctx, 400, 30010, "Dữ liệu phân trang không hợp lệ", err)
-			return
-		}
-		paging.Process()
-		customers, total, err := pclc.Service.GetAllPotentialCustomers(paging)
+
+		customers, err := pclc.Service.GetAllPotentialCustomers()
 		if err != nil {
 			response.ErrorRespone(ctx, 500, 30011, "Lỗi khi lấy danh sách khách hàng", err)
 			return
 		}
-		response.SuccessResponse(ctx, 20001, gin.H{
-			"data":  customers,
-			"page":  paging.Page,
-			"limit": paging.Limit,
-			"total": total,
-		})
+		response.SuccessResponse(ctx, 20001, customers)
 	}
 }
 

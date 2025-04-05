@@ -457,3 +457,252 @@
 {"level":"INFO","time":"2025-04-03T08:44:07.576+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
 {"level":"INFO","time":"2025-04-03T08:44:09.279+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
 {"level":"INFO","time":"2025-04-03T08:44:09.279+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-03T09:36:10.743+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-03T09:36:10.778+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-03T09:36:12.537+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-03T09:36:12.538+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-03T15:51:32.321+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-03T15:51:32.344+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-03T15:51:34.024+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-03T15:51:34.025+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-03T15:52:32.617+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0585513}
+{"level":"INFO","time":"2025-04-04T09:23:55.803+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-04-04T09:23:55.806+0700","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"uni_server/internal/initialize.CheckErrerPanic\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:16\nuni_server/internal/initialize.InitMySQL\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/mysql.go:27\nuni_server/internal/initialize.Run\n\tD:/UniEnglishCenter/uni-app/uni_server/internal/initialize/run.go:16\nmain.main\n\tD:/UniEnglishCenter/uni-app/uni_server/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files (x86)/Go/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-04T09:25:01.159+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-04T09:25:01.180+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-04T09:25:02.856+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-04T09:25:02.857+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-04T09:48:05.896+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T09:48:06.227+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.3197208}
+{"level":"INFO","time":"2025-04-04T09:50:52.037+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T09:50:52.094+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0541502}
+{"level":"INFO","time":"2025-04-04T09:51:12.099+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T09:51:12.158+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0555231}
+{"level":"INFO","time":"2025-04-04T09:51:18.690+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T09:51:18.785+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0912542}
+{"level":"INFO","time":"2025-04-04T09:51:21.360+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0498878}
+{"level":"INFO","time":"2025-04-04T09:51:27.287+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T09:51:27.422+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1299694}
+{"level":"INFO","time":"2025-04-04T09:52:35.955+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T09:52:36.188+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2125848}
+{"level":"INFO","time":"2025-04-04T09:52:59.803+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T09:52:59.905+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0923349}
+{"level":"INFO","time":"2025-04-04T09:53:13.650+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T09:53:13.721+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0630806}
+{"level":"INFO","time":"2025-04-04T10:00:40.342+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T10:00:40.459+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1127704}
+{"level":"INFO","time":"2025-04-04T10:04:51.778+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T10:04:51.880+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0983805}
+{"level":"INFO","time":"2025-04-04T10:04:58.611+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T10:04:58.694+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0795783}
+{"level":"INFO","time":"2025-04-04T10:16:10.436+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T10:16:10.501+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0611388}
+{"level":"INFO","time":"2025-04-04T10:21:11.548+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T10:21:11.786+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2300007}
+{"level":"INFO","time":"2025-04-04T10:21:48.237+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"OPTIONS","status":204,"duration":0}
+{"level":"INFO","time":"2025-04-04T10:21:48.315+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0748585}
+{"level":"INFO","time":"2025-04-04T10:35:28.366+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0617195}
+{"level":"INFO","time":"2025-04-04T10:36:12.015+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0595062}
+{"level":"INFO","time":"2025-04-04T10:54:59.662+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.5383143}
+{"level":"INFO","time":"2025-04-04T10:58:50.660+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0955033}
+{"level":"INFO","time":"2025-04-04T11:07:55.023+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2147156}
+{"level":"INFO","time":"2025-04-04T11:18:09.444+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0873294}
+{"level":"INFO","time":"2025-04-04T22:12:33.074+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.286951}
+{"level":"INFO","time":"2025-04-04T22:19:43.232+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.5356532}
+{"level":"INFO","time":"2025-04-04T22:33:13.870+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2059824}
+{"level":"INFO","time":"2025-04-04T22:33:39.805+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2998359}
+{"level":"INFO","time":"2025-04-04T22:35:47.005+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.306837}
+{"level":"INFO","time":"2025-04-04T22:40:11.525+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0965086}
+{"level":"INFO","time":"2025-04-04T22:40:13.677+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2490249}
+{"level":"INFO","time":"2025-04-04T22:40:54.501+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0595249}
+{"level":"INFO","time":"2025-04-04T22:40:56.321+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0805467}
+{"level":"INFO","time":"2025-04-04T22:47:48.363+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2300621}
+{"level":"INFO","time":"2025-04-04T22:48:11.787+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2142365}
+{"level":"INFO","time":"2025-04-04T22:51:57.644+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1907275}
+{"level":"INFO","time":"2025-04-04T22:52:17.289+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1172941}
+{"level":"INFO","time":"2025-04-04T22:52:19.315+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0618307}
+{"level":"INFO","time":"2025-04-04T22:54:55.169+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2352635}
+{"level":"INFO","time":"2025-04-04T22:55:38.353+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1740795}
+{"level":"INFO","time":"2025-04-04T22:59:31.942+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2230923}
+{"level":"INFO","time":"2025-04-04T23:00:02.560+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0610294}
+{"level":"INFO","time":"2025-04-04T23:01:09.405+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.3350782}
+{"level":"INFO","time":"2025-04-04T23:04:13.730+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2357686}
+{"level":"INFO","time":"2025-04-04T23:04:30.739+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0684151}
+{"level":"INFO","time":"2025-04-04T23:04:44.537+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0811313}
+{"level":"INFO","time":"2025-04-04T23:04:46.569+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1115681}
+{"level":"INFO","time":"2025-04-04T23:05:10.299+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.066761}
+{"level":"INFO","time":"2025-04-04T23:05:35.705+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0741778}
+{"level":"INFO","time":"2025-04-04T23:05:48.232+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.063474}
+{"level":"INFO","time":"2025-04-04T23:07:25.356+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.061964}
+{"level":"INFO","time":"2025-04-04T23:07:28.270+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1278835}
+{"level":"INFO","time":"2025-04-04T23:08:05.574+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2824548}
+{"level":"INFO","time":"2025-04-04T23:08:08.641+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.3633882}
+{"level":"INFO","time":"2025-04-04T23:15:36.923+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.3849805}
+{"level":"INFO","time":"2025-04-04T23:15:38.910+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0647952}
+{"level":"INFO","time":"2025-04-04T23:15:48.447+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2933326}
+{"level":"INFO","time":"2025-04-04T23:16:25.770+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1449426}
+{"level":"INFO","time":"2025-04-04T23:16:31.659+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.3932764}
+{"level":"INFO","time":"2025-04-04T23:17:12.746+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2420251}
+{"level":"INFO","time":"2025-04-04T23:17:33.917+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0505853}
+{"level":"INFO","time":"2025-04-04T23:17:40.543+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.3053419}
+{"level":"INFO","time":"2025-04-04T23:18:34.895+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0829547}
+{"level":"INFO","time":"2025-04-04T23:18:37.797+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.6303814}
+{"level":"INFO","time":"2025-04-04T23:26:04.908+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0980804}
+{"level":"INFO","time":"2025-04-04T23:26:08.158+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1111753}
+{"level":"INFO","time":"2025-04-04T23:27:32.960+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2421902}
+{"level":"INFO","time":"2025-04-04T23:28:03.774+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2775199}
+{"level":"INFO","time":"2025-04-05T09:58:37.053+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-05T09:58:37.097+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-05T09:58:39.148+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-05T09:58:39.148+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-05T09:59:34.422+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0913498}
+{"level":"INFO","time":"2025-04-05T10:01:58.678+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1556144}
+{"level":"INFO","time":"2025-04-05T10:03:33.209+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.223044}
+{"level":"INFO","time":"2025-04-05T10:08:46.097+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2432371}
+{"level":"INFO","time":"2025-04-05T10:44:01.574+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0679247}
+{"level":"INFO","time":"2025-04-05T10:45:21.966+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0591942}
+{"level":"INFO","time":"2025-04-05T10:45:23.348+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0935906}
+{"level":"INFO","time":"2025-04-05T12:22:06.888+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.8887491}
+{"level":"INFO","time":"2025-04-05T12:25:06.356+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0966692}
+{"level":"INFO","time":"2025-04-05T12:26:53.600+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0707776}
+{"level":"INFO","time":"2025-04-05T12:26:57.449+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":1.2650765}
+{"level":"INFO","time":"2025-04-05T12:27:41.809+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.063232}
+{"level":"INFO","time":"2025-04-05T12:27:43.693+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2299309}
+{"level":"INFO","time":"2025-04-05T16:21:39.077+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.6635452}
+{"level":"INFO","time":"2025-04-05T20:45:43.884+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.149125}
+{"level":"INFO","time":"2025-04-05T20:46:33.934+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.3305076}
+{"level":"INFO","time":"2025-04-05T20:48:31.922+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1327465}
+{"level":"INFO","time":"2025-04-05T20:52:30.654+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":1.9559883}
+{"level":"INFO","time":"2025-04-05T20:52:54.671+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.044402}
+{"level":"INFO","time":"2025-04-05T20:52:54.912+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.286488}
+{"level":"INFO","time":"2025-04-05T21:17:08.171+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0086941}
+{"level":"INFO","time":"2025-04-05T21:17:08.225+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0648763}
+{"level":"INFO","time":"2025-04-05T21:17:09.623+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0099418}
+{"level":"INFO","time":"2025-04-05T21:17:09.677+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.079779}
+{"level":"INFO","time":"2025-04-05T21:17:11.454+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0075399}
+{"level":"INFO","time":"2025-04-05T21:17:11.510+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0647269}
+{"level":"INFO","time":"2025-04-05T21:24:06.153+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0336393}
+{"level":"INFO","time":"2025-04-05T21:24:06.250+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.1398304}
+{"level":"INFO","time":"2025-04-05T21:24:06.349+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2372222}
+{"level":"INFO","time":"2025-04-05T21:24:52.777+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0257595}
+{"level":"INFO","time":"2025-04-05T21:24:52.785+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0348652}
+{"level":"INFO","time":"2025-04-05T21:24:53.049+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.3006429}
+{"level":"INFO","time":"2025-04-05T21:36:31.734+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0159483}
+{"level":"INFO","time":"2025-04-05T21:36:31.744+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0091585}
+{"level":"INFO","time":"2025-04-05T21:36:31.801+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0955123}
+{"level":"INFO","time":"2025-04-05T21:36:35.976+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0242063}
+{"level":"INFO","time":"2025-04-05T21:36:36.031+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.048909}
+{"level":"INFO","time":"2025-04-05T21:36:36.274+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.3371663}
+{"level":"INFO","time":"2025-04-05T21:54:39.322+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0827555}
+{"level":"INFO","time":"2025-04-05T21:54:39.325+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0874482}
+{"level":"INFO","time":"2025-04-05T21:54:40.258+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":1.021339}
+{"level":"INFO","time":"2025-04-05T21:56:42.296+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0328679}
+{"level":"INFO","time":"2025-04-05T21:56:42.301+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0237414}
+{"level":"INFO","time":"2025-04-05T21:56:42.422+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1811999}
+{"level":"INFO","time":"2025-04-05T21:56:45.110+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0128395}
+{"level":"INFO","time":"2025-04-05T21:56:45.110+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0132017}
+{"level":"INFO","time":"2025-04-05T21:56:45.132+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1177949}
+{"level":"INFO","time":"2025-04-05T21:58:45.354+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1215797}
+{"level":"INFO","time":"2025-04-05T21:58:50.752+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.17474}
+{"level":"INFO","time":"2025-04-05T21:58:50.827+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.2459794}
+{"level":"INFO","time":"2025-04-05T21:58:51.520+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.9407758}
+{"level":"INFO","time":"2025-04-05T22:08:08.561+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0153788}
+{"level":"INFO","time":"2025-04-05T22:08:08.575+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0161578}
+{"level":"INFO","time":"2025-04-05T22:08:08.655+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1165368}
+{"level":"INFO","time":"2025-04-05T22:08:14.095+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.1120732}
+{"level":"INFO","time":"2025-04-05T22:08:14.110+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.1295779}
+{"level":"INFO","time":"2025-04-05T22:08:14.267+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2876851}
+{"level":"INFO","time":"2025-04-05T22:11:56.031+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0186582}
+{"level":"INFO","time":"2025-04-05T22:11:56.031+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.020375}
+{"level":"INFO","time":"2025-04-05T22:11:56.128+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1222201}
+{"level":"INFO","time":"2025-04-05T22:31:38.181+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0152922}
+{"level":"INFO","time":"2025-04-05T22:31:38.187+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0134926}
+{"level":"INFO","time":"2025-04-05T22:31:38.265+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1024953}
+{"level":"INFO","time":"2025-04-05T22:32:17.822+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0332291}
+{"level":"INFO","time":"2025-04-05T22:32:17.827+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0358008}
+{"level":"INFO","time":"2025-04-05T22:32:18.041+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2496373}
+{"level":"INFO","time":"2025-04-05T22:35:15.524+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0367143}
+{"level":"INFO","time":"2025-04-05T22:35:15.525+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.038232}
+{"level":"INFO","time":"2025-04-05T22:35:15.622+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1433776}
+{"level":"INFO","time":"2025-04-05T22:38:03.973+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0447184}
+{"level":"INFO","time":"2025-04-05T22:38:04.030+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0229121}
+{"level":"INFO","time":"2025-04-05T22:38:04.135+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.2305001}
+{"level":"INFO","time":"2025-04-05T22:38:10.058+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.010672}
+{"level":"INFO","time":"2025-04-05T22:38:10.060+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0130709}
+{"level":"INFO","time":"2025-04-05T22:38:10.129+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0808893}
+{"level":"INFO","time":"2025-04-05T22:44:47.580+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.157227}
+{"level":"INFO","time":"2025-04-05T22:44:47.588+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.1637011}
+{"level":"INFO","time":"2025-04-05T22:44:48.223+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.8273239}
+{"level":"INFO","time":"2025-04-05T22:45:53.978+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0119824}
+{"level":"INFO","time":"2025-04-05T22:45:53.979+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0080753}
+{"level":"INFO","time":"2025-04-05T22:45:54.067+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1033724}
+{"level":"INFO","time":"2025-04-05T22:46:53.220+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0260706}
+{"level":"INFO","time":"2025-04-05T22:46:53.256+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0328503}
+{"level":"INFO","time":"2025-04-05T22:46:53.386+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.206669}
+{"level":"INFO","time":"2025-04-05T22:46:57.671+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0194348}
+{"level":"INFO","time":"2025-04-05T22:46:57.671+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0224191}
+{"level":"INFO","time":"2025-04-05T22:46:57.831+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1801165}
+{"level":"INFO","time":"2025-04-05T22:48:28.512+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0099903}
+{"level":"INFO","time":"2025-04-05T22:48:28.518+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0082786}
+{"level":"INFO","time":"2025-04-05T22:48:28.561+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0636569}
+{"level":"INFO","time":"2025-04-05T22:48:31.915+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0127744}
+{"level":"INFO","time":"2025-04-05T22:48:31.922+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0103725}
+{"level":"INFO","time":"2025-04-05T22:48:31.987+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0948712}
+{"level":"INFO","time":"2025-04-05T22:49:47.763+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0081914}
+{"level":"INFO","time":"2025-04-05T22:49:47.767+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0080583}
+{"level":"INFO","time":"2025-04-05T22:49:47.804+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0564588}
+{"level":"INFO","time":"2025-04-05T22:49:52.637+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0104316}
+{"level":"INFO","time":"2025-04-05T22:49:52.648+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0103933}
+{"level":"INFO","time":"2025-04-05T22:49:52.691+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0734532}
+{"level":"INFO","time":"2025-04-05T22:49:58.015+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0102973}
+{"level":"INFO","time":"2025-04-05T22:49:58.022+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0103435}
+{"level":"INFO","time":"2025-04-05T22:49:58.066+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0679528}
+{"level":"INFO","time":"2025-04-06T00:54:46.877+0700","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-06T00:54:46.902+0700","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-06T00:54:49.632+0700","caller":"initialize/aws3s.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-06T00:54:49.633+0700","caller":"initialize/aws3s.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-06T00:55:23.943+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0169151}
+{"level":"INFO","time":"2025-04-06T00:55:23.943+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0105653}
+{"level":"INFO","time":"2025-04-06T00:55:24.039+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1123277}
+{"level":"INFO","time":"2025-04-06T01:01:26.249+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.1786922}
+{"level":"INFO","time":"2025-04-06T01:01:26.249+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.1781606}
+{"level":"INFO","time":"2025-04-06T01:01:29.845+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":3.7478068}
+{"level":"INFO","time":"2025-04-06T01:01:48.516+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0160223}
+{"level":"INFO","time":"2025-04-06T01:01:48.566+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0131755}
+{"level":"INFO","time":"2025-04-06T01:01:48.625+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1416318}
+{"level":"INFO","time":"2025-04-06T01:04:15.537+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0063045}
+{"level":"INFO","time":"2025-04-06T01:04:15.543+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0073998}
+{"level":"INFO","time":"2025-04-06T01:04:15.588+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0653621}
+{"level":"INFO","time":"2025-04-06T01:04:17.610+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0056872}
+{"level":"INFO","time":"2025-04-06T01:04:17.618+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0106083}
+{"level":"INFO","time":"2025-04-06T01:04:17.669+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0652354}
+{"level":"INFO","time":"2025-04-06T01:04:43.906+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0079455}
+{"level":"INFO","time":"2025-04-06T01:04:43.911+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0088763}
+{"level":"INFO","time":"2025-04-06T01:04:43.958+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0643535}
+{"level":"INFO","time":"2025-04-06T01:05:59.340+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0099149}
+{"level":"INFO","time":"2025-04-06T01:05:59.413+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0660833}
+{"level":"INFO","time":"2025-04-06T01:05:59.489+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.1724536}
+{"level":"INFO","time":"2025-04-06T01:06:02.206+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.1616346}
+{"level":"INFO","time":"2025-04-06T01:06:02.208+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.1681123}
+{"level":"INFO","time":"2025-04-06T01:06:02.986+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.9461281}
+{"level":"INFO","time":"2025-04-06T01:07:24.134+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0067653}
+{"level":"INFO","time":"2025-04-06T01:07:24.145+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0082926}
+{"level":"INFO","time":"2025-04-06T01:07:24.193+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0715835}
+{"level":"INFO","time":"2025-04-06T01:10:21.023+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0464026}
+{"level":"INFO","time":"2025-04-06T01:10:21.027+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0485226}
+{"level":"INFO","time":"2025-04-06T01:10:21.818+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.8407122}
+{"level":"INFO","time":"2025-04-06T01:11:42.463+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0154182}
+{"level":"INFO","time":"2025-04-06T01:11:42.463+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0164922}
+{"level":"INFO","time":"2025-04-06T01:11:42.540+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0922567}
+{"level":"INFO","time":"2025-04-06T01:14:52.790+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0377601}
+{"level":"INFO","time":"2025-04-06T01:14:52.793+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0385262}
+{"level":"INFO","time":"2025-04-06T01:14:53.244+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.491219}
+{"level":"INFO","time":"2025-04-06T01:15:52.801+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0059544}
+{"level":"INFO","time":"2025-04-06T01:15:52.805+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.006765}
+{"level":"INFO","time":"2025-04-06T01:15:52.858+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.064715}
+{"level":"INFO","time":"2025-04-06T01:17:13.587+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.0067043}
+{"level":"INFO","time":"2025-04-06T01:17:13.593+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.0085224}
+{"level":"INFO","time":"2025-04-06T01:17:13.650+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":0.0710423}
+{"level":"INFO","time":"2025-04-06T01:18:03.524+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/Office","method":"GET","status":200,"duration":0.5518498}
+{"level":"INFO","time":"2025-04-06T01:18:03.529+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/position","method":"GET","status":200,"duration":0.5565759}
+{"level":"INFO","time":"2025-04-06T01:18:04.334+0700","caller":"middlewares/logger.middlewares.go:23","msg":"Request Log","path":"/api/human_resources","method":"GET","status":200,"duration":1.3632586}

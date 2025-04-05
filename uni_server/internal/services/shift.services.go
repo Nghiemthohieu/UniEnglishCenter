@@ -3,7 +3,6 @@ package services
 import (
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
-	util "uni_server/pkg/utils"
 )
 
 type ShiftService struct {
@@ -24,8 +23,8 @@ func (ss *ShiftService) UpdateShift(request models.Shift) error {
 	return ss.ShiftRepo.UpdateShift(request)
 }
 
-func (ss *ShiftService) GetAllShifts(paging util.Paging) ([]models.Shift,int64 , error) {
-	return ss.ShiftRepo.GetAllShifts(paging)
+func (ss *ShiftService) GetAllShifts() ([]models.Shift, error) {
+	return ss.ShiftRepo.GetAllShifts()
 }
 
 func (ss *ShiftService) GetShiftByID(id uint) (*models.Shift, error) {

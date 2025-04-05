@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"uni_server/global"
 	"uni_server/internal/models"
-	util "uni_server/pkg/utils"
 )
 
 type PaymentFormRepo struct{}
@@ -47,20 +46,13 @@ func (repo *PaymentFormRepo) UpdatePaymentForm(paymentForm models.PaymentForm) e
 }
 
 // 📌 Lấy danh sách hình thức thanh toán có phân trang
-func (repo *PaymentFormRepo) GetAllPaymentForms(paging util.Paging) ([]models.PaymentForm, int64, error) {
+func (repo *PaymentFormRepo) GetAllPaymentForms() ([]models.PaymentForm, error) {
 	var paymentForms []models.PaymentForm
-	var total int64
 
-	// Lấy tổng số bản ghi
-	if err := global.Mdb.Model(&models.PaymentForm{}).Count(&total).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy tổng số hình thức thanh toán: %v", err)
+	if err := global.Mdb.Find(&paymentForms).Error; err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy danh sách hình thức thanh toán: %v", err)
 	}
-
-	offset := (paging.Page - 1) * paging.Limit
-	if err := global.Mdb.Limit(paging.Limit).Offset(offset).Find(&paymentForms).Error; err != nil {
-		return nil, 0, fmt.Errorf("lỗi khi lấy danh sách hình thức thanh toán: %v", err)
-	}
-	return paymentForms, total, nil
+	return paymentForms, nil
 }
 
 // 📌 Lấy thông tin chi tiết của một hình thức thanh toán theo ID
