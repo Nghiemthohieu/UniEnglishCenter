@@ -44,7 +44,7 @@ func (dsr *DutyScheduleRepo) UpdateDutySchedule(schedule models.DutySchedule) er
 
 func (dsr *DutyScheduleRepo) GetAllDutySchedules() ([]models.DutySchedule, error) {
 	var schedules []models.DutySchedule
-	if err := global.Mdb.Preload("Human").Find(&schedules).Error; err != nil {
+	if err := global.Mdb.Preload("Human").Preload("Shift").Find(&schedules).Error; err != nil {
 		return nil, fmt.Errorf("lỗi khi lấy danh sách lịch trực: %v", err)
 	}
 	return schedules, nil
@@ -56,6 +56,38 @@ func (dsr *DutyScheduleRepo) GetDutyScheduleByID(id uint) (*models.DutySchedule,
 		return nil, fmt.Errorf("lỗi khi lấy lịch trực theo ID: %v", err)
 	}
 	return &schedule, nil
+}
+
+func (dsr *DutyScheduleRepo) GetDutyScheduleByHuman(id uint) ([]models.DutySchedule, error) {
+	var schedule []models.DutySchedule
+	err := global.Mdb.
+		Preload("Human").
+		Preload("Shift").
+		Where("id_human = ?", id).
+		Find(&schedule).Error
+
+	if err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy lịch trực theo ID nhân viên: %v", err)
+	}
+	return schedule, nil
+}
+
+func (dsr *DutyScheduleRepo) GetDutyScheduleByOffice(officeID int) ([]models.DutySchedule, error) {
+	var schedules []models.DutySchedule
+
+	err := global.Mdb.
+		Debug().
+		Joins("JOIN go_db_human ON go_db_human.id = go_db_duty_schedule.id_human").
+		Where("go_db_human.id_office = ?", officeID).
+		Preload("Human").
+		Preload("Shift").
+		Find(&schedules).Error
+
+	if err != nil {
+		return nil, fmt.Errorf("lỗi khi lấy lịch trực theo office: %v", err)
+	}
+
+	return schedules, nil
 }
 
 func (dsr *DutyScheduleRepo) DeleteDutySchedule(id uint) error {

@@ -34,3 +34,7 @@ func (tks *TimeKeepingService) GetTimeKeepingByID(id uint) (*models.TimeKeeping,
 func (tks *TimeKeepingService) DeleteTimeKeeping(id uint) error {
 	return tks.TimeKeepingRepo.DeleteTimeKeeping(id)
 }
+
+func (tks *TimeKeepingService) CreateManyTimeKeeping(request []models.TimeKeeping) error {
+	return tks.TimeKeepingRepo.CreateManyTimeKeeping(request)
+}

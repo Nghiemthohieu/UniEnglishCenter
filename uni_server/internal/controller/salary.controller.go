@@ -28,3 +28,17 @@ func (c *SalaryController) GetAllSalaries() gin.HandlerFunc {
 		response.SuccessResponse(ctx, 20001, salaries)
 	}
 }
+
+func (c *SalaryController) GetallSalary() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		id, _ := strconv.Atoi(ctx.Param("id"))
+		year, _ := strconv.Atoi(ctx.Param("year"))
+		month, _ := strconv.Atoi(ctx.Param("month"))
+		salaries, err := c.SalaryService.GetallSalary(id,year, month)
+		if err != nil {
+			response.ErrorRespone(ctx, 500, 20011, "Lỗi server", err)
+			return
+		}
+		response.SuccessResponse(ctx, 20001, salaries)
+	}
+}

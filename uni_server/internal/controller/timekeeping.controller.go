@@ -93,3 +93,24 @@ func (tkc *TimeKeepingController) GetAllTimeKeeping() gin.HandlerFunc {
 		response.SuccessResponse(ctx, 20001, timeKeepings)
 	}
 }
+
+func (tkc *TimeKeepingController) CreateManyTimeKeeping() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		var request []models.TimeKeeping
+		if err := ctx.ShouldBindJSON(&request); err != nil {
+			response.ErrorRespone(ctx, 400, 20010, "Dữ liệu không hợp lệ", err)
+			return
+		}
+		if len(request) == 0 {
+			response.ErrorRespone(ctx, 400, 20012, "Danh sách chấm công rỗng", nil)
+			return
+		}
+
+		err := tkc.TimeKeepingService.CreateManyTimeKeeping(request)
+		if err != nil {
+			response.ErrorRespone(ctx, 500, 20011, "Lỗi khi tạo chấm công", err)
+			return
+		}
+		response.SuccessResponse(ctx, 20001, "Tạo nhiều chấm công thành công")
+	}
+}

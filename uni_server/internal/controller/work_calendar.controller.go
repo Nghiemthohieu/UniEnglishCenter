@@ -35,6 +35,24 @@ func (wcc *WorkCalendarController) CreateWorkCalendar() gin.HandlerFunc {
 	}
 }
 
+func (wcc *WorkCalendarController) CreateMultiWorkCalendar() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		var requests []models.WorkCalendar
+		if err := ctx.ShouldBindJSON(&requests); err != nil {
+			response.ErrorRespone(ctx, 400, 20010, "Dữ liệu không hợp lệ", err)
+			return
+		}
+
+		err := wcc.WorkCalendarService.CreateMultiWorkCalendar(requests)
+		if err != nil {
+			response.ErrorRespone(ctx, 500, 20011, "Lỗi khi tạo nhiều lịch làm việc", err)
+			return
+		}
+
+		response.SuccessResponse(ctx, 20001, "Tạo nhiều lịch làm việc thành công")
+	}
+}
+
 func (wcc *WorkCalendarController) GetWorkCalendarByID() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 		id, err := strconv.Atoi(ctx.Param("id"))
@@ -91,5 +109,31 @@ func (wcc *WorkCalendarController) GetAllWorkCalendars() gin.HandlerFunc {
 			return
 		}
 		response.SuccessResponse(ctx, 20001, workCalendars)
+	}
+}
+
+func (wcc *WorkCalendarController) GetWorkCalendar() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		events, err := wcc.WorkCalendarService.GetWorkCalendar()
+		if err != nil {
+			response.ErrorRespone(ctx, 500, 20011, "lỗi khi lấy danh sách lịch làm", err)
+		}
+		response.SuccessResponse(ctx, 20001, events)
+	}
+}
+
+func (wcc *WorkCalendarController) GetWorkCalendarsOfSubordinates() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		id, err := strconv.Atoi(ctx.Param("id"))
+		if err != nil {
+			response.ErrorRespone(ctx, 400, 20010, "ID không hợp lệ", err)
+			return
+		}
+		events, err := wcc.WorkCalendarService.GetWorkCalendarsOfSubordinates(id)
+		if err != nil {
+			response.ErrorRespone(ctx, 500, 20011, "lỗi khi lấy danh sách lịch làm của team", err)
+			return
+		}
+		response.SuccessResponse(ctx, 20001, events)
 	}
 }

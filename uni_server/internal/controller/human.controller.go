@@ -118,3 +118,20 @@ func (hc *HumanController) DeleteHumanController() gin.HandlerFunc {
 		response.SuccessResponse(ctx, 20001, "Xóa thành công")
 	}
 }
+
+func (hc *HumanController) CountAllSubordinatesExcludeSelf() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		id, err := strconv.Atoi(ctx.Param("id"))
+		if err != nil {
+			response.ErrorRespone(ctx, 400, 20010, "ID không hợp lệ", err)
+			return
+		}
+		count, err := hc.HumanService.CountAllSubordinatesExcludeSelf(id)
+		if err != nil {
+			response.ErrorRespone(ctx, 500, 20011, "", err)
+			return
+		}
+
+		response.SuccessResponse(ctx, 20001, count)
+	}
+}

@@ -65,3 +65,23 @@ func (c *DSTeamController) GetSalesByEmployee() gin.HandlerFunc {
 		})
 	}
 }
+
+func (c *DSTeamController) GetSalesByEmployeeID() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		id, _ := strconv.Atoi(ctx.Param("id"))
+		year, _ := strconv.Atoi(ctx.Param("year"))
+		month, _ := strconv.Atoi(ctx.Param("month"))
+
+		data, err := c.DSTeamService.GetSalesByEmployeeID(id, year, month)
+		if err != nil {
+			response.ErrorRespone(ctx, 500, 20011, "Lỗi khi lấy danh sách doanh số", err)
+			return
+		}
+
+		response.SuccessResponse(ctx, 20001, gin.H{
+			"year":  year,
+			"month": month,
+			"data":  data,
+		})
+	}
+}

@@ -6,7 +6,8 @@ import (
 	"uni_server/internal/models"
 )
 
-type WorkCalendarRepo struct{}
+type WorkCalendarRepo struct {
+}
 
 func NewWorkCalendarRepo() *WorkCalendarRepo {
 	return &WorkCalendarRepo{}
@@ -22,6 +23,21 @@ func (repo *WorkCalendarRepo) CreateWorkCalendar(workCalendar models.WorkCalenda
 	if err := tx.Commit().Error; err != nil {
 		return fmt.Errorf("lỗi khi commit transaction: %v", err)
 	}
+	return nil
+}
+
+func (repo *WorkCalendarRepo) CreateMultiWorkCalendar(workCalendars []models.WorkCalendar) error {
+	tx := global.Mdb.Begin()
+
+	if err := tx.Create(&workCalendars).Error; err != nil {
+		tx.Rollback()
+		return fmt.Errorf("lỗi khi lưu nhiều lịch làm việc: %v", err)
+	}
+
+	if err := tx.Commit().Error; err != nil {
+		return fmt.Errorf("lỗi khi commit transaction: %v", err)
+	}
+
 	return nil
 }
 
@@ -49,7 +65,7 @@ func (repo *WorkCalendarRepo) UpdateWorkCalendar(workCalendar models.WorkCalenda
 func (repo *WorkCalendarRepo) GetAllWorkCalendars() ([]models.WorkCalendar, error) {
 	var workCalendars []models.WorkCalendar
 
-	if err := global.Mdb.Preload("Human").Find(&workCalendars).Error; err != nil {
+	if err := global.Mdb.Preload("Human").Preload("Shift").Find(&workCalendars).Error; err != nil {
 		return nil, fmt.Errorf("lỗi khi lấy danh sách lịch làm việc: %v", err)
 	}
 	return workCalendars, nil
@@ -81,4 +97,13 @@ func (repo *WorkCalendarRepo) DeleteWorkCalendar(id uint) error {
 
 	tx.Commit()
 	return nil
+}
+
+func (repo *WorkCalendarRepo) GetWorkCalendarsOfSubordinates(ids []int) ([]models.WorkCalendar, error) {
+	var calendars []models.WorkCalendar
+	err := global.Mdb.Preload("Human").Preload("Shift").Where("id_human IN ?", ids).Find(&calendars).Error
+	if err != nil {
+		return nil, fmt.Errorf("lấy danh sách lịch làm của team thất bại: %v", err)
+	}
+	return calendars, nil
 }

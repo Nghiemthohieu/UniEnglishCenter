@@ -53,7 +53,6 @@ func (csr *SalaryRepo) GetAllSalaries(year int, month int) ([]map[string]interfa
 		return nil, fmt.Errorf("lỗi khi lấy danh sách nhân viên: %v", err)
 	}
 
-	// Lưu kết quả
 	salaryResults := []map[string]interface{}{}
 
 	for _, emp := range employees {
@@ -66,16 +65,36 @@ func (csr *SalaryRepo) GetAllSalaries(year int, month int) ([]map[string]interfa
 		if err != nil {
 			return nil, err
 		}
+
 		TotalSalaryTeam, err := NewDSTeamRepo().GetSalesByIdEmployee(int(emp.ID), year, month)
 		if err != nil {
 			return nil, err
 		}
+
 		salaryTeam, err := csr.CalculateSalaryTeam(uint(emp.IDPosition), float64(TotalSalaryTeam.TotalSales))
 		if err != nil {
 			return nil, err
 		}
-		salary := float64(salaryTeam + salarysoft)
 
+		totalSalary := salarysoft + salaryTeam
+
+		// 🧠 Ghi vào DB
+		salaryRecord := models.Salary{
+			IDHuman:             int(emp.ID),
+			IDPosition:          emp.IDPosition,
+			PersonalSales:       int64(TotalSalarySoft),
+			TeamSales:           int64(TotalSalaryTeam.TotalSales),
+			PersonalSalesSalary: int64(salarysoft),
+			TeamSalesSalary:     int64(salaryTeam),
+			TotalSalary:         int64(totalSalary),
+			Month:               int64(month),
+			Year:                int64(year),
+		}
+		if err := global.Mdb.Create(&salaryRecord).Error; err != nil {
+			return nil, fmt.Errorf("lỗi khi lưu salary vào DB: %v", err)
+		}
+
+		// 📦 Thêm vào danh sách trả về (nếu bạn vẫn cần trả ra JSON chẳng hạn)
 		salaryResults = append(salaryResults, map[string]interface{}{
 			"id":                    emp.ID,
 			"position_id":           emp.IDPosition,
@@ -83,9 +102,22 @@ func (csr *SalaryRepo) GetAllSalaries(year int, month int) ([]map[string]interfa
 			"team_sales":            TotalSalaryTeam.TotalSales,
 			"personal_sales_salary": salarysoft,
 			"team_sales_salary":     salaryTeam,
-			"total_salary":          salary,
+			"total_salary":          totalSalary,
 		})
 	}
 
 	return salaryResults, nil
+}
+func (csr *SalaryRepo) GetAllSalary(ids []int, year int, month int) ([]models.Salary, error) {
+	var req []models.Salary
+
+	err := global.Mdb.Preload("Human").Preload("Position").Table("go_db_salary").
+		Where("id_human IN ? AND month = ? AND year = ?", ids, month, year).
+		Find(&req).Error
+
+	if err != nil {
+		return nil, fmt.Errorf("lỗi khi truy vấn lương tháng %d/%d: %v", month, year, err)
+	}
+
+	return req, nil
 }

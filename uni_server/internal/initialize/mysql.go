@@ -68,6 +68,7 @@ func migrateTables() {
 		&models.WorkCalendar{},
 		&models.Salary{},
 		&models.User{},
+		&models.Permissions{},
 	)
 
 	if err != nil {

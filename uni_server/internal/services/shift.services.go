@@ -1,6 +1,7 @@
 package services
 
 import (
+	"uni_server/internal/dto"
 	"uni_server/internal/models"
 	"uni_server/internal/repo"
 )
@@ -23,11 +24,11 @@ func (ss *ShiftService) UpdateShift(request models.Shift) error {
 	return ss.ShiftRepo.UpdateShift(request)
 }
 
-func (ss *ShiftService) GetAllShifts() ([]models.Shift, error) {
+func (ss *ShiftService) GetAllShifts() ([]dto.Shift, error) {
 	return ss.ShiftRepo.GetAllShifts()
 }
 
-func (ss *ShiftService) GetShiftByID(id uint) (*models.Shift, error) {
+func (ss *ShiftService) GetShiftByID(id uint) (*dto.Shift, error) {
 	return ss.ShiftRepo.GetShiftByID(id)
 }
 

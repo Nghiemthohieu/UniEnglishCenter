@@ -4,6 +4,11 @@ export interface Position {
     acronym: string;
 }
 
+export interface PositionCreated {
+    name: string;
+    acronym: string;
+}
+
 export interface getallPosition {
     data: Position[];
 }

@@ -1,7 +1,7 @@
 'use client'
 
-import { ChatInterview } from "@/components/chart_data_interview";
-import ChatResultInterview from "@/components/chart_result_interview";
+import { ChatInterview } from "@/components/chart/chart_data_interview";
+import ChatResultInterview from "@/components/chart/chart_result_interview";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination} from "swiper/modules";
 import "swiper/css";
@@ -26,14 +26,106 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 import React from "react";
+import { CountDateInterView } from "@/lib/interview/count_date_interview";
+import { CountDateInterviewIn, CountDateInterviewOut } from "@/JSON/interview";
+import { DsTotalHuman } from "@/JSON/ds";
+import { getDSTatolHuman } from "@/lib/ds/ds_total_human";
+import { getCountHumanTeam } from "@/lib/human/counthumanTeam";
+// import { useAuth } from "@/context/AuthContext";
+import { redirect } from "next/navigation";
+
+function formatDateToDDMMYYYY(date: Date): string {
+  const day = String(date.getDate()).padStart(2, '0');     // "11"
+  const month = String(date.getMonth() + 1).padStart(2, '0'); // "04"
+  const year = date.getFullYear(); // "2025"
+  return `${day}/${month}/${year}`;
+}
 
 export default function Home() {
+  // const {user} = useAuth()
+  // console.log("user",user)
+  // if (!user){
+  //   redirect("/login");
+  // }
+  const [CountDateInter, setCountDateInter] = React.useState<CountDateInterviewOut[]>([])
+  const [dsTotalHuman, setDsTotalHuman] = React.useState<DsTotalHuman>()
+  const [numberTeam, setNumberTeam] = React.useState<DsTotalHuman>()
   const currentMonth = new Date().getMonth() + 1;
+  const currentYear = new Date().getFullYear();
+  const today = new Date("2025-04-11");
+  const formatDS = (value: number): string => {
+    if (value >= 1_000_000_000) {
+      const formatted = (value / 1_000_000_000).toFixed(3).replace(/\.?0+$/, "");  
+      return `${formatted}tỉ`;
+    }
+    else if (value >= 1_000_000) {
+      const formatted = (value / 1_000_000).toFixed(3).replace(/\.?0+$/, "");  
+      return `${formatted}tr`;
+    } else if (value >= 1_000) {
+      const formatted = (value / 1_000).toFixed(3).replace(/\.?0+$/, "");
+      return `${formatted}k`;
+    }
+    return value.toString();
+  };
+  const formattedTotalSales = formatDS(dsTotalHuman?.total_sales || 0);
+
+  React.useEffect(() => {
+    const fetchdata = async () => {
+      try {
+        const dataCount: CountDateInterviewIn = {
+          id: 1,
+          date: formatDateToDDMMYYYY(today),
+        }
+        const customerSource: any = await CountDateInterView(dataCount); // không khuyến khích nhưng hợp lệ
+        const data = customerSource.data;
+        setCountDateInter(data);
+      } catch (error) {
+        console.error('Failed to fetch data:', error);   
+      }
+    };
+
+    fetchdata();
+  }, []);
+
+  React.useEffect(() => {
+      const fetchdata = async () => {
+        try {
+          const customerSource: any = await getDSTatolHuman(1,currentYear,currentMonth); // không khuyến khích nhưng hợp lệ
+          const data = customerSource.data;
+          setDsTotalHuman(data);
+        } catch (error) {
+          console.error('Failed to fetch data:', error);   
+        }
+      };
+  
+      fetchdata();
+    }, []);
+
+    React.useEffect(() => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        console.warn("⚠️ Chưa có token → chưa gọi API getCountHumanTeam");
+        return; // không gọi API khi chưa có token
+      }
+    
+      const fetchdata = async () => {
+        try {
+          const customerSource: any = await getCountHumanTeam(1);
+          const data = customerSource.data;
+          setNumberTeam(data);
+        } catch (error) {
+          console.error("Failed to fetch data:", error);
+        }
+      };
+    
+      fetchdata();
+    }, []);
+    
 
   const datalist = [
-    { item: `Doanh số tháng ${currentMonth}`, title: `235tr` },
+    { item: `Doanh số tháng ${currentMonth}`, title: `${formattedTotalSales}` },
     { item: `Tổng nhân sự`, title: `2` },
-    { item: `Lịch phỏng vấn`, title: `5` },
+    { item: `Lịch phỏng vấn`, title: `${CountDateInter[0]?.count}` },
   ];
 
   const chartData = [
@@ -85,20 +177,6 @@ export default function Home() {
       color: "hsl(var(--chart-1))",
     },
   } satisfies ChartConfig
-  // const formatDS = (value: number): string => {
-  //   if (value >= 1_000_000_000) {
-  //     const formatted = (value / 1_000_000_000).toFixed(3).replace(/\.?0+$/, "");  
-  //     return `${formatted}tỉ`;
-  //   }
-  //   else if (value >= 1_000_000) {
-  //     const formatted = (value / 1_000_000).toFixed(3).replace(/\.?0+$/, "");  
-  //     return `${formatted}tr`;
-  //   } else if (value >= 1_000) {
-  //     const formatted = (value / 1_000).toFixed(3).replace(/\.?0+$/, "");
-  //     return `${formatted}k`;
-  //   }
-  //   return value.toString();
-  // };
 
   const getCurrentMonthYearNumeric = () => {
     const now = new Date();

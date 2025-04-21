@@ -1,10 +1,8 @@
-export interface Team {
-    ID: number;
-    name: string;  // Nếu bạn muốn lưu tên team
+export interface TeamCreate {
+    id: number;
 }
 
-export interface Human {
-    ID: number;
+export interface HumanCreate {
     name: string;
     id_position: number;
     id_office: number;
@@ -15,14 +13,14 @@ export interface Human {
     birth_day: string;
     gender: string;
     email: string;
-    team: Team[];  // Thay đổi thành mảng Team[]
+    team: TeamCreate[];  // Thay đổi thành mảng Team[]
 }
 
-export interface HumanNIC {
+export interface HumanNICCreate {
     nic: string;
  }
 
 export interface createHumanResponse {
-    human: Human;
-    human_nic: HumanNIC[];
+    human: HumanCreate;
+    human_nic: HumanNICCreate[];
 }

@@ -34,11 +34,14 @@ func NewRouter() *gin.Engine {
 	r.Use(middlewares.LoggerMiddle(), middlewares.CorsMiddleware(), middlewares.RateLimitMiddleware())
 
 	v1 := r.Group("/api")
+	// v1.Use(middlewares.RateLimitMiddleware())
+	// v1.Use(middlewares.AuthMiddleware())
 	{
 		personnel := v1.Group("/human_resources")
 		{
 			personnel.POST("", controller.NewHumanController().CreateHumanController())
 			personnel.GET("/:id", controller.NewHumanController().GetHumanController())
+			personnel.GET("/count/:id", controller.NewHumanController().CountAllSubordinatesExcludeSelf())
 			personnel.GET("", controller.NewHumanController().GetAllHumansController())
 			personnel.PUT("", controller.NewHumanController().UpdateHumanController())
 			personnel.DELETE("/:id", controller.NewHumanController().DeleteHumanController())
@@ -79,6 +82,8 @@ func NewRouter() *gin.Engine {
 		{
 			DutySchedule.POST("", controller.NewDutyScheduleController().CreateDutySchedule())
 			DutySchedule.GET("", controller.NewDutyScheduleController().GetAllDutySchedules())
+			DutySchedule.GET("/office/:id", controller.NewDutyScheduleController().GetDutyScheduleByOffice())
+			DutySchedule.GET("/human/:id", controller.NewDutyScheduleController().GetDutyScheduleByHuman())
 			DutySchedule.GET("/:id", controller.NewDutyScheduleController().GetDutyScheduleByID())
 			DutySchedule.PUT("", controller.NewDutyScheduleController().UpdateDutySchedule())
 			DutySchedule.DELETE("/:id", controller.NewDutyScheduleController().DeleteDutySchedule())
@@ -86,8 +91,12 @@ func NewRouter() *gin.Engine {
 		interview_list := v1.Group("/interview_list")
 		{
 			interview_list.POST("", controller.NewInterviewListController().CreateInterview())
+			interview_list.POST("/date", controller.NewInterviewListController().CountInterviewResultByDate())
 			interview_list.GET("", controller.NewInterviewListController().GetAllInterviews())
 			interview_list.GET("/:id", controller.NewInterviewListController().GetInterviewByID())
+			interview_list.GET("/result/:id/:year/:month", controller.NewInterviewListController().CountInterviewResult())
+			interview_list.GET("/human/:id/:year/:month", controller.NewInterviewListController().CountInterviewhuman())
+			interview_list.GET("/office/:id", controller.NewInterviewListController().GetInterviewByOffice())
 			interview_list.PUT("", controller.NewInterviewListController().UpdateInterview())
 			interview_list.DELETE("/:id", controller.NewInterviewListController().DeleteInterview())
 		}
@@ -142,7 +151,10 @@ func NewRouter() *gin.Engine {
 		work_calendar := v1.Group("/work_calendar")
 		{
 			work_calendar.POST("", controller.NewWorkCalendarController().CreateWorkCalendar())
+			work_calendar.POST("/alls", controller.NewWorkCalendarController().CreateMultiWorkCalendar())
 			work_calendar.GET("", controller.NewWorkCalendarController().GetAllWorkCalendars())
+			work_calendar.GET("/events", controller.NewWorkCalendarController().GetWorkCalendar())
+			work_calendar.GET("/events/:id", controller.NewWorkCalendarController().GetWorkCalendarsOfSubordinates())
 			work_calendar.GET("/:id", controller.NewWorkCalendarController().GetWorkCalendarByID())
 			work_calendar.PUT("", controller.NewWorkCalendarController().UpdateWorkCalendar())
 			work_calendar.DELETE("/:id", controller.NewWorkCalendarController().DeleteWorkCalendar())
@@ -150,6 +162,7 @@ func NewRouter() *gin.Engine {
 		timekeeping := v1.Group("/timekeeping")
 		{
 			timekeeping.POST("", controller.NewTimeKeepingController().CreateTimeKeeping())
+			timekeeping.POST("/many", controller.NewTimeKeepingController().CreateManyTimeKeeping())
 			timekeeping.GET("", controller.NewTimeKeepingController().GetAllTimeKeeping())
 			timekeeping.GET("/:id", controller.NewTimeKeepingController().GetTimeKeepingByID())
 			timekeeping.PUT("", controller.NewTimeKeepingController().UpdateTimeKeeping())
@@ -167,11 +180,18 @@ func NewRouter() *gin.Engine {
 		{
 			ds.GET("/:year/:month", controller.NewDSTeamController().GetSalesByEmployee())
 			ds.GET("/team/:id/:year/:month", controller.NewDSTeamController().GetTotalSalesByTeam())
+			// ds.GET("/human/:id/:year/:month", controller.NewDSTeamController().GetSalesByEmployeeID())
 		}
 		salary := v1.Group("/salary")
 		{
 			salary.GET("/:year/:month", controller.NewSalaryController().GetAllSalaries())
+			salary.GET("/all/:id/:year/:month", controller.NewSalaryController().GetallSalary())
 		}
+	}
+	v2 := r.Group("auth")
+	{
+		v2.POST("/register", controller.NewAuthController().Register())
+		v2.POST("/login", controller.NewAuthController().Login())
 	}
 	return r
 }

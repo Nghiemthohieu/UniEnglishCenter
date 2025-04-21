@@ -12,26 +12,25 @@ var jwtSecret = []byte("your_secret_key")
 
 // JWTClaims định nghĩa payload của JWT
 type JWTClaims struct {
-	UserID int    `json:"user_id"`
-	Roles  string `json:"roles"`
+	UserID      int      `json:"user_id"`
+	Roles       int      `json:"roles"`
+	Permissions []string `json:"permissions"`
 	jwt.RegisteredClaims
 }
 
 // GenerateToken - Tạo JWT Token cho user
-func GenerateToken(userID int, roles string) (string, error) {
+func GenerateToken(userID int, roles int, permissions []string) (string, error) {
 	claims := JWTClaims{
-		UserID: userID,
-		Roles:  roles,
+		UserID:      userID,
+		Roles:       roles,
+		Permissions: permissions, // 👈 Thêm permissions
 		RegisteredClaims: jwt.RegisteredClaims{
-			ExpiresAt: jwt.NewNumericDate(time.Now().Add(24 * time.Hour)), // Token hết hạn sau 24h
+			ExpiresAt: jwt.NewNumericDate(time.Now().Add(24 * time.Hour)),
 			IssuedAt:  jwt.NewNumericDate(time.Now()),
 		},
 	}
 
-	// Tạo token
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
-
-	// Ký token với secret key
 	return token.SignedString(jwtSecret)
 }
 

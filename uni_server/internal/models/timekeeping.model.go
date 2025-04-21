@@ -15,8 +15,8 @@ type TimeKeeping struct {
 	IDPosition int           `gorm:"column:id_position" json:"id_position"`
 	Date       util.DateOnly `gorm:"column:date; type:date" json:"date"`
 	Day        string        `gorm:"column:day" json:"day"`
-	CheckIn    util.TimeOnly `gorm:"column:check_in; type:time" json:"check_in"`
-	CheckOut   util.TimeOnly `gorm:"column:check_out; type:time" json:"check_out"`
+	CheckIn    string        `gorm:"column:check_in; type:varchar" json:"check_in"`
+	CheckOut   string        `gorm:"column:check_out; type:varchar" json:"check_out"`
 	WorkHour   float64       `gorm:"column:work_hour; type:float" json:"work_hour"`
 }
 

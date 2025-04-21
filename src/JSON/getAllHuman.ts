@@ -18,7 +18,6 @@ export interface Status {
 
 export interface Team {
     ID: number;
-    name: string;  // Nếu bạn muốn lưu tên team
 }
 
 export interface Human {

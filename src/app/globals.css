@@ -225,3 +225,10 @@ a.active::before {
     @apply bg-background text-foreground;
   }
 }
+
+.custom-tooltip .recharts-default-tooltip {
+  padding: 6px 10px;
+  display: flex;
+  gap: 8px; /* 👈 Thêm khoảng cách giữa nhãn và số */
+  align-items: center;
+}

@@ -51,6 +51,38 @@ func (dsc *DutyScheduleController) GetDutyScheduleByID() gin.HandlerFunc {
 	}
 }
 
+func (dsc *DutyScheduleController) GetDutyScheduleByOffice() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		id, err := strconv.Atoi(ctx.Param("id"))
+		if err != nil {
+			response.ErrorRespone(ctx, 400, 20010, "ID không hợp lệ", err)
+			return
+		}
+		schedule, err := dsc.DutyScheduleService.GetDutyScheduleByOffice(id)
+		if err != nil {
+			response.ErrorRespone(ctx, 500, 20011, "Lỗi khi lấy lịch trực", err)
+			return
+		}
+		response.SuccessResponse(ctx, 20001, schedule)
+	}
+}
+
+func (dsc *DutyScheduleController) GetDutyScheduleByHuman() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		id, err := strconv.Atoi(ctx.Param("id"))
+		if err != nil {
+			response.ErrorRespone(ctx, 400, 20010, "ID không hợp lệ", err)
+			return
+		}
+		schedule, err := dsc.DutyScheduleService.GetDutyScheduleByHuman(uint(id))
+		if err != nil {
+			response.ErrorRespone(ctx, 500, 20011, "Lỗi khi lấy lịch trực", err)
+			return
+		}
+		response.SuccessResponse(ctx, 20001, schedule)
+	}
+}
+
 func (dsc *DutyScheduleController) UpdateDutySchedule() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 		var request models.DutySchedule

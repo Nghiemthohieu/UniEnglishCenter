@@ -9,45 +9,65 @@ import (
 	"golang.org/x/time/rate"
 )
 
-// Cấu trúc lưu thông tin Rate Limiter cho từng IP
+// Visitor lưu rate limiter và thời điểm truy cập cuối
+type Visitor struct {
+	limiter  *rate.Limiter
+	lastSeen time.Time
+}
+
 var (
-	visitors = make(map[string]*rate.Limiter)
+	visitors = make(map[string]*Visitor)
 	mu       sync.Mutex
 )
 
-// getLimiter - Trả về rate limiter cho từng IP
-func getLimiter(ip string) *rate.Limiter {
+// NewVisitor trả về rate limiter mới
+func newVisitor() *rate.Limiter {
+	return rate.NewLimiter(40, 100) // 2 request/giây, burst 5
+}
+
+// getVisitor lấy hoặc tạo mới limiter cho IP
+func getVisitor(ip string) *rate.Limiter {
 	mu.Lock()
 	defer mu.Unlock()
 
-	// Nếu IP chưa có trong danh sách thì tạo limiter mới
-	if _, exists := visitors[ip]; !exists {
-		limiter := rate.NewLimiter(2, 5) // Tốc độ: 2 requests/giây, tối đa 5 request trong burst
-		visitors[ip] = limiter
-
-		// Xóa IP sau 1 phút để tiết kiệm bộ nhớ
-		go func() {
-			time.Sleep(1 * time.Minute)
-			mu.Lock()
-			delete(visitors, ip)
-			mu.Unlock()
-		}()
+	v, exists := visitors[ip]
+	if !exists {
+		limiter := newVisitor()
+		visitors[ip] = &Visitor{limiter, time.Now()}
+		return limiter
 	}
-	return visitors[ip]
+
+	v.lastSeen = time.Now()
+	return v.limiter
 }
 
-// RateLimitMiddleware - Middleware giới hạn số request
-func RateLimitMiddleware() gin.HandlerFunc {
-	return func(c *gin.Context) {
-		ip := c.ClientIP() // Lấy IP của user
+// cleanupVisitors chạy nền, dọn các IP không còn hoạt động
+func cleanupVisitors() {
+	for {
+		time.Sleep(time.Minute)
+		mu.Lock()
+		for ip, v := range visitors {
+			if time.Since(v.lastSeen) > time.Minute {
+				delete(visitors, ip)
+			}
+		}
+		mu.Unlock()
+	}
+}
 
-		limiter := getLimiter(ip)
+// RateLimitMiddleware áp dụng middleware cho từng request
+func RateLimitMiddleware() gin.HandlerFunc {
+	go cleanupVisitors() // Chạy 1 lần duy nhất
+
+	return func(c *gin.Context) {
+		ip := c.ClientIP()
+		limiter := getVisitor(ip)
+
 		if !limiter.Allow() {
 			c.JSON(http.StatusTooManyRequests, gin.H{"error": "Too many requests"})
 			c.Abort()
 			return
 		}
-
 		c.Next()
 	}
 }

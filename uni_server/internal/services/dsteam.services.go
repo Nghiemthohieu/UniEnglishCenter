@@ -19,6 +19,10 @@ func (s *DSTeamService) GetTotalSalesByTeam(humanID int, year int, month int) (i
 	return s.DSTeamRepo.GetTotalSalesByTeam(humanID, year, month)
 }
 
-func (s *DSTeamService) GetSalesByEmployee(year int, month int) ([]models.SalesData, error){
+func (s *DSTeamService) GetSalesByEmployee(year int, month int) ([]models.SalesData, error) {
 	return s.DSTeamRepo.GetSalesByEmployee(year, month)
+}
+
+func (s *DSTeamService) GetSalesByEmployeeID(id int, year int, month int) (models.SalesData, error) {
+	return s.DSTeamRepo.GetSalesByEmployeeID(id, year, month)
 }

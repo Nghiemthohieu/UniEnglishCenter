@@ -86,3 +86,18 @@ func (dsr *DSTeamRepo) GetSalesByIdEmployee(humanID int, year int, month int) (m
 	}
 	return sales, nil
 }
+
+func (dsr *DSTeamRepo) GetSalesByEmployeeID(id int, year int, month int) (models.SalesData, error) {
+	var sales models.SalesData
+
+	err := global.Mdb.Table("go_db_bill").
+		Select("id_human, COALESCE(SUM(pay_money), 0) as total_sales").
+		Where("id_human = ? AND YEAR(registration_date) = ? AND MONTH(registration_date) = ?", id, year, month).
+		Group("id_human").
+		Scan(&sales).Error
+
+	if err != nil {
+		return sales, err
+	}
+	return sales, nil
+}

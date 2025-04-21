@@ -193,3 +193,41 @@ func (hs *HumanService) UpdateHumanService(request dto.HumanRequest) error {
 func (hs *HumanService) DeleteHumanService(id int) error {
 	return hs.HumanRepo.DeleteHumanRepo(id)
 }
+
+func GetAllSubordinateIDs(humanID int) ([]int, error) {
+	var result []int
+	queue := []int{humanID}
+
+	for len(queue) > 0 {
+		current := queue[0]
+		queue = queue[1:]
+		result = append(result, current)
+
+		var subIDs []int
+		err := global.Mdb.Table("go_team_human AS t").
+			Select("t.human_id").
+			Joins("JOIN go_db_human h ON t.human_id = h.id").
+			Where("t.team_id = ? AND h.deleted_at IS NULL", current).
+			Scan(&subIDs).Error
+		if err != nil {
+			return nil, err
+		}
+
+		queue = append(queue, subIDs...)
+	}
+
+	// Bỏ người gốc nếu không cần
+	return result[0:], nil
+}
+
+func (hs *HumanService) CountAllSubordinatesExcludeSelf(humanID int) (int, error) {
+	subIDs, err := GetAllSubordinateIDs(humanID)
+	fmt.Printf("id: %v", subIDs)
+	if err != nil {
+		return 0, err
+	}
+	if len(subIDs) > 0 {
+		return len(subIDs) - 1, nil
+	}
+	return 0, nil
+}

@@ -82,3 +82,17 @@ func (repo *TimeKeepingRepo) DeleteTimeKeeping(id uint) error {
 	tx.Commit()
 	return nil
 }
+
+func (repo *TimeKeepingRepo) CreateManyTimeKeeping(list []models.TimeKeeping) error {
+	tx := global.Mdb.Begin()
+	for _, item := range list {
+		if err := tx.Create(&item).Error; err != nil {
+			tx.Rollback()
+			return fmt.Errorf("lỗi khi lưu dòng chấm công: %v", err)
+		}
+	}
+	if err := tx.Commit().Error; err != nil {
+		return fmt.Errorf("lỗi khi commit transaction: %v", err)
+	}
+	return nil
+}

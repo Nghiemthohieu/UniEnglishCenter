@@ -49,7 +49,7 @@ func (repo *PositionRepo) UpdatePosition(position models.Position) error {
 func (repo *PositionRepo) GetAllPositions() ([]models.Position, error) {
 	var positions []models.Position
 
-	if err := global.Mdb.Find(&positions).Error; err != nil {
+	if err := global.Mdb.Preload("Permissions").Find(&positions).Error; err != nil {
 		return nil, fmt.Errorf("lỗi khi lấy danh sách vị trí công việc: %v", err)
 	}
 	return positions, nil

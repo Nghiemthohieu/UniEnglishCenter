@@ -4,6 +4,11 @@ export interface Office {
     acronym: string;
 }
 
+export interface OfficeCreate {
+    name: string;
+    acronym: string;
+}
+
 export interface getallOffice {
     data: Office[];
 }
